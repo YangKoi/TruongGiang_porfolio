@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="curve-glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+
+  <!-- Grid Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.02" stroke-width="1">
+    <path d="M 0,90 L 600,90 M 0,180 L 600,180 M 0,270 L 600,270" />
+    <path d="M 150,0 L 150,360 M 300,0 L 300,360 M 450,0 L 450,360" />
+  </g>
+
+  <!-- Title -->
+  <text x="30" y="40" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#38bdf8" letter-spacing="1">
+    METROLOGICAL UNCERTAINTY &amp; AUDIT ASSESSMENT
+  </text>
+
+  <!-- Left Column: Gaussian Normal Distribution Curve representing uncertainty -->
+  <g transform="translate(40, 70)" filter="url(#glow)">
+    <rect width="250" height="230" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="#334155" stroke-width="1.5" />
+    <text x="25" y="28" font-family="'Outfit', sans-serif" font-weight="700" font-size="10" fill="#94a3b8">UNCERTAINTY PROBABILITY CURVE</text>
+
+    <!-- X and Y Axes -->
+    <line x1="30" y1="180" x2="220" y2="180" stroke="#475569" stroke-width="1.5" />
+    <line x1="125" y1="60" x2="125" y2="190" stroke="#475569" stroke-width="1" stroke-dasharray="2 2" />
+
+    <!-- Gaussian Curve Area (Gradient Fill) -->
+    <!-- Point coordinates of normal distribution curve -->
+    <path d="M 30,180 Q 80,180 100,140 T 125,75 T 150,140 T 220,180" fill="url(#curve-glow)" opacity="0.3" />
+    <path d="M 30,180 Q 80,180 100,140 T 125,75 T 150,140 T 220,180" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+
+    <!-- Uncertainty bounds indicators (k=2) -->
+    <line x1="85" y1="100" x2="85" y2="180" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 1" />
+    <line x1="165" y1="100" x2="165" y2="180" stroke="#ef4444" stroke-width="1" stroke-dasharray="2 1" />
+    
+    <path d="M 85,160 L 165,160" fill="none" stroke="#ef4444" stroke-width="1" />
+    <polygon points="85,160 90,157 90,163" fill="#ef4444" />
+    <polygon points="165,160 160,157 160,163" fill="#ef4444" />
+
+    <!-- Text annotations inside chart -->
+    <text x="125" y="152" font-family="'Outfit', sans-serif" font-weight="700" font-size="8" fill="#ef4444" text-anchor="middle">±0.22% Uncertainty (k=2)</text>
+    <text x="125" y="195" font-family="monospace" font-size="7" fill="#64748b" text-anchor="middle">Measured Volume (V)</text>
+    <text x="125" y="70" font-family="monospace" font-weight="700" font-size="8" fill="#38bdf8" text-anchor="middle">Mean (μ)</text>
+  </g>
+
+  <!-- Right Column: Audit Checklist, Validation Shield & Math Equations -->
+  <g transform="translate(320, 70)">
+    <!-- Metrology Audit Checklist box -->
+    <rect width="240" height="230" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="#334155" stroke-width="1.5" />
+    
+    <!-- Title -->
+    <text x="20" y="28" font-family="'Outfit', sans-serif" font-weight="700" font-size="11" fill="#f8fafc">ISO 5168 AUDIT CHECKLIST</text>
+
+    <!-- Checklist rows -->
+    <!-- Row 1 -->
+    <g transform="translate(20, 48)">
+      <circle cx="10" cy="10" r="8" fill="#10b981" />
+      <path d="M 7,10 L 9,12 L 13,8" fill="none" stroke="white" stroke-width="1.5" />
+      <text x="25" y="13" font-family="sans-serif" font-size="9" fill="#94a3b8">Physical Geometric Verification</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(20, 78)">
+      <circle cx="10" cy="10" r="8" fill="#10b981" />
+      <path d="M 7,10 L 9,12 L 13,8" fill="none" stroke="white" stroke-width="1.5" />
+      <text x="25" y="13" font-family="sans-serif" font-size="9" fill="#94a3b8">Flow Computer Calculations Audit</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(20, 108)">
+      <circle cx="10" cy="10" r="8" fill="#10b981" />
+      <path d="M 7,10 L 9,12 L 13,8" fill="none" stroke="white" stroke-width="1.5" />
+      <text x="25" y="13" font-family="sans-serif" font-size="9" fill="#94a3b8">Sensors Loop Calibration Review</text>
+    </g>
+
+    <!-- Uncertainty Math Equation representation -->
+    <g transform="translate(20, 140)">
+      <rect width="200" height="35" rx="4" fill="#0f172a" stroke="#1e293b" />
+      <text x="100" y="22" font-family="monospace" font-style="italic" font-weight="700" font-size="9" fill="#38bdf8" text-anchor="middle">
+        Uc = √[ (u1)² + (u2)² + (u3)² ]
+      </text>
+    </g>
+
+    <!-- Validated Metrology Seal badge -->
+    <g transform="translate(85, 185)" filter="url(#glow)">
+      <!-- Golden ribbon / star badge shape -->
+      <polygon points="35,0 45,15 65,15 50,28 58,48 35,38 12,48 20,28 5,15 25,15" fill="#f59e0b" />
+      <circle cx="35" cy="20" r="14" fill="#d97706" />
+      <text x="35" y="23" font-family="'Outfit', sans-serif" font-weight="800" font-size="8" fill="white" text-anchor="middle">AUDIT</text>
+      <text x="35" y="-6" font-family="'Outfit', sans-serif" font-weight="700" font-size="8" fill="#10b981" text-anchor="middle" letter-spacing="1">VALIDATED</text>
+    </g>
+  </g>
+</svg>
