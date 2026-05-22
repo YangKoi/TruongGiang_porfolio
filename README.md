@@ -1,6 +1,6 @@
 # Trang Portfolio Cá nhân & Showcase Dự án (trggiang_portfolio)
 
-Chào mừng bạn đến với kho lưu trữ mã nguồn trang Portfolio cá nhân của **Trần Gia Giang** - Kỹ sư Tự động hóa & Đo lường Dầu khí (Automation, Instrumentation, Calibration & Gas Metering Specialist).
+Chào mừng bạn đến với kho lưu trữ mã nguồn trang Portfolio cá nhân của **Nguyễn Đình Trường Giang** - Kỹ sư Tự động hóa & Đo lường Dầu khí (Automation, Instrumentation, Calibration & Gas Metering Specialist).
 
 Dự án này được thiết kế theo phong cách **Sleek Dark & Glassmorphism** hiện đại, phản ánh chiều sâu kỹ thuật và tính chuyên nghiệp trong lĩnh vực công nghiệp dầu khí.
 
@@ -39,4 +39,4 @@ Dự án này được thiết kế theo phong cách **Sleek Dark & Glassmorphis
 3. (Khuyên dùng) Mở thư mục này bằng VS Code và sử dụng extension **Live Server** để có trải nghiệm xem thay đổi thời gian thực mượt mà nhất.
 
 ---
-*Thiết kế và phát triển với sự tỉ mỉ bởi Trần Gia Giang.*
+*Thiết kế và phát triển với sự tỉ mỉ bởi Nguyễn Đình Trường Giang.*
