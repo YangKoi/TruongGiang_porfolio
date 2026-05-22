@@ -301,6 +301,31 @@ button, input, textarea {
     transition: all 0.3s;
 }
 
+/* Language Toggle Button */
+.lang-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: 8px;
+    background: rgba(249, 115, 22, 0.08);
+    border: 1px solid rgba(249, 115, 22, 0.35);
+    color: var(--primary);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+.lang-toggle-btn:hover {
+    background: rgba(249, 115, 22, 0.2);
+    border-color: var(--primary);
+    box-shadow: 0 0 16px rgba(249, 115, 22, 0.25);
+    transform: translateY(-1px);
+}
+
 /* ==========================================================================
    SECTION 1: PROFILE & ABOUT
    ========================================================================== */
