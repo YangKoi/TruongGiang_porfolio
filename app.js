@@ -12,90 +12,82 @@ const i18n = {
         },
         profile: {
             name: "Nguyễn Đình Trường Giang",
-            subtitle: "Kỹ thuật viên tại RIKEN VIET | Kỹ sư Điện & Tự động hóa | Chuyên gia Giải pháp An toàn Khí",
+            subtitle: "Kỹ sư Điện - Tự động hóa & Đo lường",
             location: "TP. Hồ Chí Minh, Việt Nam",
             status: "Sẵn sàng hợp tác",
-            about: "Tôi là một chuyên gia kỹ thuật chuyên sâu về <strong>Phát hiện Khí (Gas Detection)</strong> và <strong>Tự động hóa Công nghiệp</strong>, hiện đang dẫn dắt vận hành kỹ thuật tại Riken Viet. Với nền tảng kỹ thuật vững chắc trải dài từ lập trình PLC, thiết kế bản vẽ AutoCAD Electrical đến phát triển phần mềm bằng Python và C, tôi tập trung vào việc cung cấp các <strong>giải pháp an toàn tối ưu cho các ngành công nghiệp</strong>. Tôi đam mê ứng dụng công nghệ hiện đại để nâng cao tiêu chuẩn an toàn lao động và hiệu quả vận hành tại Việt Nam.",
+            about: "Tôi là một Kỹ sư Điện & Tự động hóa với hơn 4 năm kinh nghiệm trong lĩnh vực đo lường khí, thiết bị đo lường và hệ thống điều khiển tại Riken Viet. Tôi chuyên sâu về hiệu chuẩn các thiết bị đo lường công nghiệp, tính toán độ không đảm bảo đo và đánh giá sai số sau hiệu chuẩn. Với chuyên môn vững chắc trong lập trình PLC, thiết kế bản vẽ AutoCAD Electrical và cấu hình giao diện HMI/SCADA, tôi cam kết mang đến các giải pháp an toàn, chính xác và tối ưu hiệu suất vận hành.",
             emailLabel: "Email liên hệ",
             phoneLabel: "Số điện thoại"
         },
         stats: {
             years: "Năm kinh nghiệm",
-            projects: "Dự án hoàn thành",
-            accuracy: "An toàn & Hiệu quả"
+            projects: "Dự án chính",
+            accuracy: "Hiệu chuẩn chuẩn xác"
         },
         pillars: {
             heading: "Lĩnh Vực Hoạt Động Cốt Lõi",
-            p1Title: "Gas Detection & Safety Solutions (Phát hiện Khí & Giải pháp An toàn)",
-            p1Desc: "Thiết kế và triển khai hệ thống phát hiện khí rò rỉ công nghiệp, đảm bảo an toàn lao động và tuân thủ tiêu chuẩn an toàn quốc tế tại các nhà máy, khu công nghiệp.",
-            p2Title: "Industrial Automation & PLC Programming (Tự động hóa & Lập trình PLC)",
-            p2Desc: "Lập trình PLC, thiết kế bản vẽ điện AutoCAD Electrical và tích hợp hệ thống điều khiển tự động hóa cho dây chuyền sản xuất công nghiệp.",
-            p3Title: "Software Development (Phát triển Phần mềm Kỹ thuật)",
-            p3Desc: "Phát triển ứng dụng phần mềm kỹ thuật bằng Python và C để tự động hóa quy trình, thu thập dữ liệu và giám sát thiết bị công nghiệp."
+            p1Title: "Hiệu chuẩn Thiết bị & Phân tích Sai số",
+            p1Desc: "Thực hiện hiệu chuẩn chính xác các cảm biến đo đạc (Transmitters), đầu dò khí rò rỉ. Tính toán độ không đảm bảo đo (Uncertainty) và hiệu chỉnh sai số sau hiệu chuẩn đạt chuẩn chất lượng.",
+            p2Title: "Tự động hóa & Lập trình PLC/HMI",
+            p2Desc: "Lập trình hệ điều khiển PLC (Siemens, Mitsubishi, Omron), thiết kế màn hình vận hành HMI (Siemens, Mitsubishi, Delta) và tích hợp tủ điện công nghiệp.",
+            p3Title: "Bản vẽ Kỹ thuật & Thiết kế AutoCAD",
+            p3Desc: "Thiết kế bản vẽ tủ điện điều khiển, sơ đồ nguyên lý đấu nối thiết bị đo lường và hệ thống giám sát rò rỉ khí bằng AutoCAD Electrical."
         },
         skills: {
             sectionTag: "Năng lực Kỹ thuật",
             heading: "Kỹ Năng & Công Nghệ Chuyên Ngành",
-            subtitle: "Kết hợp chuyên môn an toàn khí công nghiệp, tự động hóa PLC và lập trình phần mềm để cung cấp các giải pháp kỹ thuật toàn diện.",
-            cat1: "Tự động hóa & An toàn Khí",
-            cat2: "Lập trình & Thiết kế",
-            cat3: "Quản lý & Công cụ"
+            subtitle: "Sự kết hợp giữa chuyên môn hiệu chuẩn đo lường vật lý chuẩn xác và lập trình điều khiển tự động hóa công nghiệp.",
+            cat1: "Tự động hóa & Lập trình",
+            cat2: "Hiệu chuẩn & Đo lường",
+            cat3: "Thiết kế & Công cụ"
         },
         experience: {
             sectionTag: "Hành trình Sự nghiệp",
             heading: "Kinh Nghiệm Làm Việc & Học Vấn",
-            subtitle: "Dòng thời gian ghi nhận các cột mốc phát triển sự nghiệp và chuyên môn trong lĩnh vực tự động hóa & an toàn công nghiệp.",
-            job1Title: "Kỹ thuật viên | Kỹ sư Điện & Tự động hóa | Chuyên gia An toàn Khí",
-            job1Company: "RIKEN VIET",
-            job1Desc: "Dẫn dắt vận hành kỹ thuật tại Riken Viet, chuyên về thiết kế và triển khai hệ thống phát hiện khí rò rỉ công nghiệp (Gas Detection Systems). Lập trình PLC, thiết kế bản vẽ AutoCAD Electrical và phát triển phần mềm giám sát bằng Python & C. Tập trung vào việc cung cấp giải pháp an toàn tối ưu, nâng cao tiêu chuẩn an toàn lao động tại các khu công nghiệp Việt Nam.",
-            job2Title: "— Cập nhật thêm —",
-            job2Company: "",
-            job2Desc: "",
-            job3Title: "— Cập nhật thêm —",
-            job3Company: "",
-            job3Desc: "",
-            eduTitle: "Bằng cấp & Chứng chỉ",
-            edu1: "Kỹ thuật Công nghiệp (Industrial Engineering)",
-            edu1Org: "Trường Đại học Công nghiệp TP. Hồ Chí Minh (HUIT)",
-            edu2: "Lập trình Điều khiển Khả trình (PLC)",
-            edu2Org: "Trường Đại học Công nghiệp TP. Hồ Chí Minh (HUIT)",
-            edu3: "Quản lý Dự án (Project Management)",
-            edu3Org: "Trường Đại học Công nghiệp TP. Hồ Chí Minh (HUIT)",
-            edu4: "— Cập nhật thêm —",
-            edu4Org: "",
+            subtitle: "Dòng thời gian ghi nhận các hoạt động đóng góp thực tế trong lĩnh vực tự động hóa và hiệu chuẩn đo lường thiết bị.",
+            job1Title: "Kỹ sư Điện - Tự động hóa & Đo lường",
+            job1Company: "Riken Viet Gas Detector Technology Co., Ltd",
+            job1Desc: "Thực hiện sửa chữa, căn chỉnh và hiệu chuẩn các thiết bị và hệ thống giám sát rò rỉ khí độc, khí cháy nổ. Tính toán sai số hệ thống sau hiệu chuẩn và đánh giá độ không đảm bảo đo nhằm duy trì tiêu chuẩn đo lường khắt khe. Thiết kế sơ đồ nguyên lý đấu nối thiết bị đo, vẽ bản vẽ tủ điện điều khiển công nghiệp và lập trình các dòng PLC (Siemens, Mitsubishi), thiết kế giao diện HMI (Siemens, Delta). Lập dự toán vật tư, kế hoạch thi công trọn gói cho hệ thống cảnh báo rò rỉ khí.",
+            eduTitle: "Học vấn & Chứng chỉ",
+            edu1: "Kỹ sư Công nghệ Kỹ thuật Điện - Điện tử",
+            edu1Org: "Đại học Công nghiệp Thực phẩm TP.HCM (HUFI/HUIT) | 2016 - 2020",
+            edu2: "Chứng chỉ Tiếng Anh VSTEP B1",
+            edu2Org: "Trường Đại học Sư phạm TP. Hồ Chí Minh | 2024",
+            edu3: "Chứng chỉ Kỹ năng Hiệu chuẩn & Đánh giá Sai số Đo lường",
+            edu3Org: "Trung tâm Đào tạo Kỹ thuật Đo lường Chất lượng",
             eduSectionTag: "Học Vấn & Chứng Chỉ Chuyên Ngành"
         },
         projects: {
             sectionTag: "Thành quả Thực tiễn",
             heading: "Dự Án Điển Hình Đã Thực Hiện",
-            subtitle: "Danh sách các dự án thiết kế, tích hợp, hiệu chuẩn và kiểm toán hệ thống đo lường điều khiển công nghiệp dầu khí thực tế.",
+            subtitle: "Danh sách các dự án thiết kế, lập trình tự động hóa và hiệu chuẩn đo lường thiết bị rò rỉ khí tiêu biểu.",
             viewMore: "Xem chi tiết & Ảnh"
         },
         contact: {
             sectionTag: "Kết nối Công việc",
             heading: "Liên Hệ Với Tôi",
-            subtitle: "Gửi tin nhắn hoặc yêu cầu tư vấn kỹ thuật. Tôi luôn sẵn lòng thảo luận các giải pháp đo lường tự động hóa mới.",
+            subtitle: "Gửi tin nhắn trực tiếp cho tôi. Tôi luôn sẵn lòng trao đổi về các giải pháp tự động hóa và hiệu chuẩn thiết bị.",
             namePlaceholder: "Ví dụ: Nguyễn Văn A",
             nameLabel: "Họ và tên của bạn *",
             emailLabel: "Địa chỉ Email *",
             emailPlaceholder: "name@company.com",
             subjectLabel: "Chủ đề liên hệ",
-            subjectPlaceholder: "Ví dụ: Hợp tác dự án hiệu chuẩn / Tư vấn kỹ thuật đo khí",
+            subjectPlaceholder: "Ví dụ: Hiệu chuẩn thiết bị / Lập trình PLC / Tư vấn kỹ thuật",
             messageLabel: "Nội dung tin nhắn *",
-            messagePlaceholder: "Nhập chi tiết yêu cầu công việc hoặc lời nhắn của bạn...",
+            messagePlaceholder: "Nhập lời nhắn hoặc yêu cầu công việc cụ thể của bạn...",
             submitBtn: "Gửi Tin Nhắn Liên Hệ",
             successMsg: "Cảm ơn bạn! Tin nhắn đã được gửi thành công. Tôi sẽ liên hệ lại sớm nhất!"
         },
         footer: {
-            tagline: "Kỹ thuật chính xác • An toàn vận hành • Tiêu chuẩn quốc tế",
-            copyright: "Cốt lõi mã nguồn được lưu trữ tại"
+            tagline: "Chính xác tối đa • An toàn tối ưu • Vận hành bền bỉ",
+            copyright: "Cốt lõi mã nguồn lưu trữ tại"
         },
         modal: {
             loading: "Đang tải chi tiết dự án...",
             challenge: "Thách Thức Kỹ Thuật",
             solution: "Giải Pháp Thực Hiện",
             result: "Kết Quả Đạt Được",
-            role: "Vai trò của bạn",
+            role: "Vai trò",
             duration: "Thời gian triển khai",
             standards: "Tiêu chuẩn áp dụng",
             tech: "Thiết bị & Công nghệ chính",
@@ -112,90 +104,82 @@ const i18n = {
         },
         profile: {
             name: "Nguyen Dinh Truong Giang",
-            subtitle: "Technician at RIKEN VIET | Electrical & Automation Engineer | Gas Safety Solutions Expert",
+            subtitle: "Electrical - Automation & Metrology Engineer",
             location: "Ho Chi Minh City, Vietnam",
             status: "Open to Collaboration",
-            about: "I am a technical professional specializing in <strong>Gas Detection</strong> and <strong>Industrial Automation</strong>, currently leading operations at Riken Viet. With a robust technical background ranging from PLC programming and AutoCAD Electrical design to software development in Python and C, I focus on delivering <strong>optimized safety solutions for industrial sectors</strong>. I am passionate about leveraging modern technology to enhance workplace safety standards and operational efficiency in Vietnam.",
+            about: "I am an Electrical & Automation Engineer with over 4 years of experience in gas measurement, instrumentation, and control systems at Riken Viet. I specialize in the calibration of industrial measurement equipment, calculating measurement uncertainty, and post-calibration error analysis. Armed with strong expertise in PLC programming, AutoCAD Electrical drafting, and HMI/SCADA interface design, I am committed to delivering safe, precise, and highly optimized automation solutions.",
             emailLabel: "Contact Email",
             phoneLabel: "Phone Number"
         },
         stats: {
             years: "Years of Experience",
-            projects: "Projects Completed",
-            accuracy: "Safety & Efficiency"
+            projects: "Featured Projects",
+            accuracy: "Precise Calibration"
         },
         pillars: {
             heading: "Core Areas of Expertise",
-            p1Title: "Gas Detection & Safety Solutions",
-            p1Desc: "Designing and deploying industrial gas leak detection systems to ensure workplace safety and compliance with international safety standards at factories and industrial zones.",
-            p2Title: "Industrial Automation & PLC Programming",
-            p2Desc: "Programming PLCs, designing AutoCAD Electrical schematics, and integrating automated control systems for industrial production lines.",
-            p3Title: "Software Development for Engineering",
-            p3Desc: "Developing technical software applications in Python and C to automate workflows, acquire data, and remotely monitor industrial equipment."
+            p1Title: "Instrument Calibration & Error Analysis",
+            p1Desc: "Performing precise calibration of transmitters and gas detectors. Computing measurement uncertainty and correcting post-calibration errors to achieve quality standards.",
+            p2Title: "Automation & PLC/HMI Programming",
+            p2Desc: "Programming PLCs (Siemens, Mitsubishi, Omron), designing HMI interfaces (Siemens, Mitsubishi, Delta), and integrating industrial electrical panels.",
+            p3Title: "Technical Drawings & AutoCAD Design",
+            p3Desc: "Designing electrical control panel layouts, wiring schematics, and gas leak monitoring system blueprints using AutoCAD Electrical."
         },
         skills: {
             sectionTag: "Technical Competencies",
             heading: "Skills & Specialized Technologies",
-            subtitle: "A combination of industrial gas safety expertise, PLC automation, and software engineering to deliver comprehensive technical solutions.",
-            cat1: "Automation & Gas Safety",
-            cat2: "Programming & Design",
-            cat3: "Management & Tools"
+            subtitle: "A combination of physical measurement calibration precision and industrial automation control systems programming.",
+            cat1: "Automation & Programming",
+            cat2: "Calibration & Metrology",
+            cat3: "Design & Software"
         },
         experience: {
             sectionTag: "Career Journey",
             heading: "Work Experience & Education",
-            subtitle: "A timeline of professional milestones in industrial automation and gas safety engineering.",
-            job1Title: "Technician | Electrical & Automation Engineer | Gas Safety Solutions Expert",
-            job1Company: "RIKEN VIET",
-            job1Desc: "Leading technical operations at Riken Viet, specializing in the design and deployment of industrial gas leak detection systems. Programming PLCs, designing AutoCAD Electrical schematics, and developing monitoring software in Python & C. Focused on delivering optimized safety solutions that enhance workplace safety standards and operational efficiency across industrial sectors in Vietnam.",
-            job2Title: "— To be updated —",
-            job2Company: "",
-            job2Desc: "",
-            job3Title: "— To be updated —",
-            job3Company: "",
-            job3Desc: "",
-            eduTitle: "Degrees & Certificates",
-            edu1: "Industrial Engineering",
-            edu1Org: "Ho Chi Minh City University of Industry and Trade (HUIT)",
-            edu2: "Programmable Logic Controller (PLC)",
-            edu2Org: "Ho Chi Minh City University of Industry and Trade (HUIT)",
-            edu3: "Project Management",
-            edu3Org: "Ho Chi Minh City University of Industry and Trade (HUIT)",
-            edu4: "— To be updated —",
-            edu4Org: "",
+            subtitle: "A timeline of professional contributions in industrial automation and instrument calibration engineering.",
+            job1Title: "Electrical - Automation & Metrology Engineer",
+            job1Company: "Riken Viet Gas Detector Technology Co., Ltd",
+            job1Desc: "Repaired, adjusted, and calibrated toxic and explosive gas leak monitoring systems. Conducted post-calibration error assessments and calculated measurement uncertainty to ensure strict metrological standards. Designed wiring schematics, electrical control panels, and programmed PLCs (Siemens, Mitsubishi) alongside HMI interfaces (Siemens, Delta). Prepared bill of materials (BOM) and project execution schemes for comprehensive gas safety monitoring systems.",
+            eduTitle: "Education & Certificates",
+            edu1: "Bachelor of Electrical & Electronic Engineering Technology",
+            edu1Org: "HCMC University of Industry and Trade (HUIT) | 2016 - 2020",
+            edu2: "English Proficiency Certificate VSTEP B1",
+            edu2Org: "HCMC University of Education | 2024",
+            edu3: "Metrological Calibration & Error Evaluation Certificate",
+            edu3Org: "Metrology and Calibration Training Center",
             eduSectionTag: "Education & Professional Certificates"
         },
         projects: {
             sectionTag: "Real-World Achievements",
             heading: "Featured Projects",
-            subtitle: "A portfolio of real oil & gas metering design, integration, calibration, and system audit projects.",
+            subtitle: "A portfolio of technical projects involving PLC programming, system integration, and gas sensor calibration.",
             viewMore: "View Details & Images"
         },
         contact: {
             sectionTag: "Professional Inquiries",
             heading: "Get In Touch",
-            subtitle: "Send a message or request a technical consultation. I'm always available to discuss new automation and measurement solutions.",
+            subtitle: "Send a direct message. I'm always available to discuss automation integration and instrument calibration services.",
             namePlaceholder: "E.g. John Smith",
             nameLabel: "Your Full Name *",
             emailLabel: "Email Address *",
             emailPlaceholder: "name@company.com",
             subjectLabel: "Subject",
-            subjectPlaceholder: "E.g. Calibration Project Collaboration / Gas Metering Consultation",
+            subjectPlaceholder: "E.g. Calibration Project / PLC Programming / Technical Inquiry",
             messageLabel: "Message *",
-            messagePlaceholder: "Enter your inquiry or project details...",
+            messagePlaceholder: "Enter your message or specific project details...",
             submitBtn: "Send Message",
-            successMsg: "Thank you! Your message has been sent. I will get back to you as soon as possible!"
+            successMsg: "Thank you! Your message has been sent successfully. I will get back to you soon!"
         },
         footer: {
-            tagline: "Engineering Precision • Operational Safety • International Standards",
-            copyright: "Source code is stored at"
+            tagline: "Maximum Precision • Optimal Safety • Robust Operation",
+            copyright: "Source code is hosted at"
         },
         modal: {
             loading: "Loading project details...",
             challenge: "Technical Challenge",
             solution: "Solution Implemented",
             result: "Results Achieved",
-            role: "Your Role",
+            role: "Role",
             duration: "Project Duration",
             standards: "Standards Applied",
             tech: "Key Equipment & Technologies",
@@ -210,140 +194,138 @@ const i18n = {
 const projectsData = {
     "project-1": {
         vi: {
-            title: "Hệ thống Đo lường Khí Thương mại AGA 9 (Fiscal Gas Metering Skid)",
-            category: "Gas Metering",
-            tags: ["Gas Metering", "AGA 9", "OMNI 6000", "Ultrasonic", "Gas Sizing", "API MPMS"],
-            duration: "10 Tháng (2023)",
-            role: "Kỹ sư Tự động hóa & Hiệu chuẩn chính (Lead E&I Commissioning)",
-            standards: "AGA Report No. 9, AGA Report No. 8, API MPMS Chapter 21.1",
-            technologies: "Flow Computer OMNI 6000, Cảm biến siêu âm Daniel 3410, Sắc ký khí Daniel 700 GC",
+            title: "Hệ thống giám sát khí 12 kênh (Nhà máy hóa chất Đồng Nai)",
+            category: "Automation & Calibration",
+            tags: ["Lập trình PLC", "Hiệu chuẩn cảm biến", "Thiết kế tủ điện", "Hóa chất", "Độ không đảm bảo đo"],
+            duration: "06 Tháng (2022 - 2023)",
+            role: "Kỹ sư Tự động hóa & Hiệu chuẩn chính",
+            standards: "TCVN/ISO/IEC 17025, TCVN 6112, OIML R111",
+            technologies: "PLC Siemens S7-1200, Đầu dò khí Riken Keiki, Màn hình HMI Siemens, AutoCAD Electrical",
             images: [
-                { url: "images/project1.svg", caption: "Sơ đồ lắp ráp hệ thống Ultrasonic Metering Skid tại xưởng chế tạo" },
-                { url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=900&auto=format&fit=crop", caption: "Công tác chạy thử Loop Test kết nối dòng tín hiệu từ Meter về Flow Computer" },
-                { url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=900&auto=format&fit=crop", caption: "Giao diện cấu hình phần mềm OMNI và kiểm tra hàm tính toán nén khí AGA 8" }
+                { url: "images/project1.svg", caption: "Sơ đồ bố trí hệ thống giám sát 12 đầu dò khí độc quanh nhà xưởng" },
+                { url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=900&auto=format&fit=crop", caption: "Đấu nối tủ điều khiển PLC Siemens và chạy thử loop test các kênh đo" }
             ],
-            challenge: "Thiết kế hệ thống đo lường khí gas áp lực cao phục vụ giao nhận thương mại quốc tế (Fiscal Custody Transfer) đòi hỏi sai số toàn hệ thống cực kỳ nhỏ (<0.3%). Phải tính toán bù nhiệt độ, áp suất tức thời và kết nối dữ liệu phân tích hóa học khí đốt thời gian thực từ trạm sắc ký khí (Gas Chromatograph) để cập nhật nhiệt trị liên tục mà không gây gián đoạn dữ liệu hoặc lệch nhịp tính toán.",
-            solution: "Xây dựng hệ thống đo gồm 3 nhánh đo song song (2 nhánh hoạt động + 1 nhánh dự phòng) sử dụng thiết bị đo siêu âm 4-đường truyền. Tích hợp tủ Flow Computer OMNI 6000 kép dự phòng. Toàn bộ dữ liệu PT & TT kết nối kép qua HART và Modbus RTU. Lập trình giải thuật bù nén khí thực tế theo tiêu chuẩn AGA 8.",
-            result: "Hệ thống vận hành thử nghiệm vượt qua kiểm duyệt Quatest 3 và đại diện quốc tế. Sai số đo lường thực tế đạt 0.15% (nhỏ hơn nhiều so với giới hạn 0.3%). Dự án bàn giao đúng tiến độ, trạm trung chuyển khí ghi nhận lưu lượng chính xác trị giá hàng triệu USD mỗi ngày."
+            challenge: "Nhà máy hóa chất sinh ra nhiều khí độc dễ cháy nổ, đòi hỏi sai số giám sát cực thấp. Tín hiệu truyền từ 12 cảm biến khoảng cách xa bị suy hao dòng 4-20mA, dẫn đến lệch kết quả. Ngoài ra, việc xác định độ không đảm bảo đo của từng điểm cảm biến để lập bảng bù sai số là bắt buộc để đáp ứng quy định kiểm định môi trường hóa chất.",
+            solution: "Thiết kế tủ điều khiển trung tâm sử dụng PLC Siemens S7-1200 và mô-đun Analog tín hiệu cách ly. Trực tiếp hiệu chuẩn 12 cảm biến bằng mẫu khí chuẩn (Span Gas). Thiết lập bảng tính toán độ không đảm bảo đo loại A & B và lập trình giải thuật tuyến tính hóa đường cong sai số trực tiếp trên PLC nhằm tự động hiệu chỉnh giá trị sau hiệu chuẩn.",
+            result: "Hệ thống hoạt động ổn định 24/7. Sai số sau hiệu chuẩn giảm từ 4.5% xuống dưới 1.0% F.S (đạt tiêu chuẩn vận hành an toàn). Bàn giao bản vẽ AutoCAD Electrical và báo cáo độ không đảm bảo đo đạt chất lượng kiểm định."
         },
         en: {
-            title: "AGA 9 Fiscal Gas Metering Skid (Ultrasonic Custody Transfer System)",
-            category: "Gas Metering",
-            tags: ["Gas Metering", "AGA 9", "OMNI 6000", "Ultrasonic", "Gas Sizing", "API MPMS"],
-            duration: "10 Months (2023)",
-            role: "Lead E&I Commissioning Engineer",
-            standards: "AGA Report No. 9, AGA Report No. 8, API MPMS Chapter 21.1",
-            technologies: "OMNI 6000 Flow Computer, Daniel 3410 Ultrasonic Sensor, Daniel 700 Gas Chromatograph",
+            title: "12-Channel Gas Monitoring System (Dong Nai Chemical Plant)",
+            category: "Automation & Calibration",
+            tags: ["PLC Programming", "Sensor Calibration", "Panel Design", "Chemicals", "Uncertainty"],
+            duration: "06 Months (2022 - 2023)",
+            role: "Lead Automation & Calibration Engineer",
+            standards: "ISO/IEC 17025, TCVN 6112, OIML R111",
+            technologies: "Siemens S7-1200 PLC, Riken Keiki Gas Detectors, Siemens HMI, AutoCAD Electrical",
             images: [
-                { url: "images/project1.svg", caption: "Assembly diagram of the Ultrasonic Metering Skid at the fabrication yard" },
-                { url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=900&auto=format&fit=crop", caption: "Loop test commissioning: signal wiring from meter to flow computer" },
-                { url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=900&auto=format&fit=crop", caption: "OMNI configuration interface and AGA 8 gas compressibility calculation verification" }
+                { url: "images/project1.svg", caption: "Layout of the 12 gas detectors positioned around the factory facility" },
+                { url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=900&auto=format&fit=crop", caption: "Wiring the Siemens PLC control panel and testing loops for all channels" }
             ],
-            challenge: "Designing a high-pressure gas metering system for international fiscal custody transfer required an extremely low total system error (<0.3%). Real-time gas composition analysis from a chromatograph had to be continuously fed into the flow computer without interrupting calculation cycles, while compensating for dynamic pressure and temperature.",
-            solution: "Built a 3-stream parallel metering system (2 active + 1 standby) using 4-path ultrasonic flowmeters. Integrated redundant OMNI 6000 flow computers. All PT & TT data fed via dual HART and Modbus RTU. Programmed AGA 8 real-gas compressibility compensation algorithms.",
-            result: "System passed rigorous Quatest 3 and international client verification. Actual measurement error stabilized at 0.15% (well within the 0.3% limit). Project delivered on schedule; the metering station accurately records gas volumes worth millions of USD daily."
+            challenge: "The chemical plant emits hazardous gases, requiring extremely low monitoring tolerances. Analog 4-20mA signals from 12 long-distance detectors suffered from signal drop and interference. Additionally, calculating the precise measurement uncertainty for each detector to program correction factors was mandatory to satisfy local regulatory standards.",
+            solution: "Designed a central panel with a Siemens S7-1200 PLC and isolated analog modules. Calibrated all 12 sensors using standard Span Gas bottles. Conducted Type A & B measurement uncertainty analyses and coded a linearization adjustment algorithm inside the PLC to correct errors post-calibration.",
+            result: "The system runs 24/7 with zero downtime. Total post-calibration error was reduced from 4.5% to under 1.0% F.S. The client was provided with AutoCAD Electrical drawings and a certified uncertainty report."
         }
     },
     "project-2": {
         vi: {
-            title: "Nâng cấp Hệ thống SCADA & Điều khiển Trạm Phân phối Khí Thị Vải",
-            category: "PLC & SCADA",
-            tags: ["TIA Portal", "S7-1500H", "WinCC", "Redundancy", "Profinet", "Industrial Network"],
-            duration: "08 Tháng (2023 - 2024)",
-            role: "Kỹ sư Tích hợp Hệ thống (Systems Integrator)",
-            standards: "IEC 61131-3, ISA-101 (HMI Design), API RP 554",
-            technologies: "Siemens CPU 1517H Hot Standby, ET200SP HA I/O, WinCC Professional V18 SCADA",
+            title: "Hệ thống giám sát khí cháy nổ, báo cháy & dập lửa (VSIP I)",
+            category: "Safety System",
+            tags: ["Đầu dò khí cháy nổ", "Tính toán sai số", "Hệ thống dập lửa", "VSIP I", "AutoCAD Electrical"],
+            duration: "08 Tháng (2023)",
+            role: "Kỹ sư Thiết kế E&I & Tích hợp",
+            standards: "NFPA 72 (National Fire Alarm Code), ISO 12100",
+            technologies: "Đầu dò khí nổ LEL, Solenoid kích dập lửa, PLC Mitsubishi, Giao diện HMI Delta",
             images: [
-                { url: "images/project2.svg", caption: "Bố cục tủ điều khiển kép trung tâm Siemens S7-1500H trong quá trình lắp dây" },
-                { url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop", caption: "Giao diện SCADA giám sát vận hành thời gian thực, thiết kế theo tiêu chuẩn đồ họa ISA-101" }
+                { url: "images/project2.svg", caption: "Bản vẽ tủ điều khiển tích hợp báo động gas và dập lửa tự động" },
+                { url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop", caption: "Cài đặt và kiểm tra cảm biến áp suất xả khí dập lửa" }
             ],
-            challenge: "Hệ thống SCADA và PLC cũ hoạt động hơn 10 năm đã xuống cấp, thường xuyên lỗi truyền thông, linh kiện thay thế khan hiếm. Thách thức lớn nhất là phải thực hiện lắp đặt tủ mới, đấu nối chuyển đổi I/O (hơn 1200 points) và chạy thử hệ điều khiển mới trong thời gian dừng trạm tối đa 36 giờ để tránh gián đoạn cấp khí cho các nhà máy điện.",
-            solution: "Sử dụng kiến trúc Siemens S7-1517H Hot Standby song song. Toàn bộ I/O sử dụng dòng ET200SP HA hỗ trợ Hot-Swap. Thiết lập mạng Profinet ring dự phòng (MRP). Thiết kế SCADA WinCC Professional tối ưu hóa màu sắc và quản lý cảnh báo theo tiêu chuẩn ISA-101.",
-            result: "Chuyển đổi hoàn thành trong 28 giờ (sớm hơn 8 giờ so với kế hoạch). Trạm Thị Vải hoạt động 24/7 với Availability đạt 99.99%. Nhân viên vận hành phản hồi cực tốt về giao diện SCADA trực quan."
+            challenge: "Hệ thống tích hợp 11 cảm biến LEL khí dễ cháy kết hợp van kích solenoid dập lửa tự động. Yêu cầu đặt ra là tuyệt đối không được báo động giả (False alarm) gây phun bọt dập lửa ngoài ý muốn gây hại cho máy móc cơ khí, đồng thời vẫn phải bảo đảm phản ứng tức thì khi có rò rỉ khí thực tế.",
+            solution: "Sử dụng PLC Mitsubishi làm bộ xử lý trung tâm với cấu trúc kiểm tra điều kiện chéo (2-out-of-3 logic). Tính toán độ không đảm bảo đo kết hợp của cụm cảm biến LEL. Lập quy trình hiệu chuẩn định kỳ 3 tháng/lần, kiểm tra sai số điểm không (Zero error) và sai số điểm thang đo (Span error) để loại trừ trôi cảm biến.",
+            result: "Dự án hoàn thành đúng tiến độ, vận hành thực tế 100% không ghi nhận báo động giả. Đạt chứng nhận nghiệm thu phòng cháy chữa cháy của KCN VSIP I."
         },
         en: {
-            title: "SCADA & Control System Upgrade – Thi Vai Gas Distribution Station",
-            category: "PLC & SCADA",
-            tags: ["TIA Portal", "S7-1500H", "WinCC", "Redundancy", "Profinet", "Industrial Network"],
-            duration: "08 Months (2023 - 2024)",
-            role: "Systems Integrator",
-            standards: "IEC 61131-3, ISA-101 (HMI Design), API RP 554",
-            technologies: "Siemens CPU 1517H Hot Standby, ET200SP HA I/O, WinCC Professional V18 SCADA",
+            title: "Explosive Gas Monitoring, Fire Alarm & Extinguishing System (VSIP I)",
+            category: "Safety System",
+            tags: ["Explosive Gas Detectors", "Error Calculation", "Extinguishing", "VSIP I", "AutoCAD Electrical"],
+            duration: "08 Months (2023)",
+            role: "E&I Design & Integration Engineer",
+            standards: "NFPA 72 (National Fire Alarm Code), ISO 12100",
+            technologies: "LEL Gas Detectors, Solenoid Actuators, Mitsubishi PLC, Delta HMI",
             images: [
-                { url: "images/project2.svg", caption: "Central dual-controller cabinet layout (Siemens S7-1500H) during wiring installation" },
-                { url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop", caption: "Real-time SCADA monitoring interface designed to ISA-101 graphic standards" }
+                { url: "images/project2.svg", caption: "Control cabinet schematic showing integrated gas alarms and extinguishing logic" },
+                { url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop", caption: "Installing and testing the fire-extinguishing pressure release sensors" }
             ],
-            challenge: "The aging SCADA and PLC system (10+ years) was plagued by frequent communication faults and obsolete spare parts. The biggest challenge was installing new cabinets, migrating 1,200+ I/O points, and commissioning the new control system within a strict 36-hour station shutdown window to avoid interrupting gas supply to power plants.",
-            solution: "Deployed Siemens S7-1517H Hot Standby parallel redundant architecture. All I/O used ET200SP HA modules supporting live Hot-Swap replacement. Configured Profinet Media Redundancy Protocol (MRP) ring network. Designed WinCC Professional SCADA with ISA-101 compliant alarm management and color coding.",
-            result: "Cutover completed in 28 hours (8 hours ahead of schedule). Thi Vai station now operates 24/7 at 99.99% availability. Operators praised the intuitive SCADA interface and 5x faster system response times."
+            challenge: "Integrating 11 flammable LEL gas sensors with automatic solenoid-triggered fire suppression. The primary challenge was to prevent any false alarms that could trigger accidental chemical discharge (which would ruin expensive mechanical equipment), while ensuring rapid response during real leaks.",
+            solution: "Implemented a Mitsubishi PLC with 2-out-of-3 voting logic for sensor validation. Performed combined measurement uncertainty calculations for the LEL sensor array. Established a 3-month calibration cycle evaluating zero and span drifts to neutralize sensor aging errors.",
+            result: "Project delivered successfully. The system operates with zero false alarms and has achieved formal fire safety certification from the VSIP I Industrial Zone authority."
         }
     },
     "project-3": {
         vi: {
-            title: "Hệ thống Tự động hóa Hiệu chuẩn Thiết bị (Auto-Calibration Loop)",
-            category: "Calibration",
-            tags: ["Calibration", "ISO 17025", "Beamex", "Fluke 754", "Python", "Automation Test"],
-            duration: "06 Tháng (2022)",
-            role: "Kỹ sư giải pháp đo lường & Lập trình phần mềm (Software & Metrology Engineer)",
-            standards: "ISO/IEC 17025, OIML R111, DKD-R 6-1",
-            technologies: "Fluke 754 calibrator, Bơm tạo áp lực thủy lực Additel, Phần mềm tự động hóa Python/Qt",
+            title: "Hệ thống giám sát, báo cháy & dập lửa dùng PLC (VSIP I)",
+            category: "PLC & Calibration",
+            tags: ["Mitsubishi PLC", "Hiệu chuẩn thiết bị", "HMI Delta", "Tính toán sai số", "Hệ thống an toàn"],
+            duration: "05 Tháng (2023 - 2024)",
+            role: "Kỹ sư Tự động hóa & Hiệu chuẩn",
+            standards: "TCVN 3890 (Trang bị phòng cháy chữa cháy), IEC 61508 (SIL 2)",
+            technologies: "PLC Mitsubishi FX3U, Màn hình HMI Delta, Cảm biến nhiệt độ và khói, Thiết bị kiểm chuẩn Fluke 754",
             images: [
-                { url: "images/project3.svg", caption: "Thiết bị đo áp suất chuẩn Fluke kết nối trực tiếp vào máy tính kiểm tra" },
-                { url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=900&auto=format&fit=crop", caption: "Màn hình cấu hình giải thuật quét dải đo 5 điểm chuẩn và tính toán sai số tuyến tính" }
+                { url: "images/project3.svg", caption: "Sơ đồ nguyên lý đấu nối ngoại vi hệ thống PLC FX3U" },
+                { url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=900&auto=format&fit=crop", caption: "Sử dụng Fluke 754 hiệu chuẩn đầu vào Analog thu thập cảm biến nhiệt độ" }
             ],
-            challenge: "Hằng năm phải hiệu chuẩn hàng nghìn thiết bị đo từ các giàn khoan. Ghi chép thủ công 5 điểm đo (0%, 25%, 50%, 75%, 100%), tính sai số tuyến tính bằng Excel tốn nhiều thời gian, dễ sai sót và khó quản lý chứng nhận hiệu chuẩn theo ISO 17025.",
-            solution: "Phát triển bộ tích hợp phần cứng và phần mềm tự động hóa. Kết nối Fluke 754 qua HART/RS232. Lập trình ứng dụng Python tự động đọc giá trị đo, kiểm soát ổn định áp suất, tính toán độ không đảm bảo đo (Uncertainty) và kết xuất chứng chỉ hiệu chuẩn PDF mã hóa chống sửa đổi.",
-            result: "Thời gian hiệu chuẩn một thiết bị giảm từ 45 phút xuống còn 12 phút (tiết kiệm >70%). Loại bỏ hoàn toàn lỗi nhập dữ liệu thủ công. Phần mềm được phê duyệt phù hợp quy trình ISO/IEC 17025."
+            challenge: "Một xưởng sản xuất cơ khí yêu cầu nâng cấp hệ thống an toàn phòng cháy tích hợp đo đạc nhiệt độ trực quan. Cần kiểm soát chặt chẽ sai số của các cảm biến nhiệt độ RTD PT100 ở các lò sấy và căn chỉnh dòng analog thu thập dữ liệu về PLC để kích hoạt quạt hút nhiệt khẩn cấp chính xác ở 85°C.",
+            solution: "Thiết kế tủ điều khiển dùng PLC Mitsubishi FX3U và màn hình Delta. Sử dụng thiết bị đo chuẩn Fluke 754 mô phỏng nhiệt trị RTD nhằm hiệu chuẩn đầu vào analog PLC. Phân tích sai số điểm trôi của bộ chuyển đổi nhiệt độ (Temperature Transmitter), lập công thức hiệu chỉnh bù tuyến tính sai số tĩnh trong code PLC.",
+            result: "Căn chỉnh thành công điểm kích hoạt nhiệt độ chính xác ±0.5°C tại ngưỡng 85°C. Giao diện màn hình HMI Delta trực quan hóa nhiệt độ thời gian thực, lưu trữ nhật ký báo động và hiển thị sai số chênh lệch tức thời."
         },
         en: {
-            title: "Automated Instrument Calibration Loop System",
-            category: "Calibration",
-            tags: ["Calibration", "ISO 17025", "Beamex", "Fluke 754", "Python", "Automation Test"],
-            duration: "06 Months (2022)",
-            role: "Software & Metrology Engineer",
-            standards: "ISO/IEC 17025, OIML R111, DKD-R 6-1",
-            technologies: "Fluke 754 Calibrator, Additel Hydraulic Pressure Pump, Python/Qt Automation Software",
+            title: "PLC-Based Gas, Fire Alarm & Suppression Control System (VSIP I)",
+            category: "PLC & Calibration",
+            tags: ["Mitsubishi PLC", "Instrument Calibration", "Delta HMI", "Error Analysis", "Safety System"],
+            duration: "05 Months (2023 - 2024)",
+            role: "Automation & Calibration Engineer",
+            standards: "TCVN 3890 (Fire Protection Equipment), IEC 61508 (SIL 2)",
+            technologies: "Mitsubishi FX3U PLC, Delta HMI, RTD/Smoke Sensors, Fluke 754 Documenting Process Calibrator",
             images: [
-                { url: "images/project3.svg", caption: "Fluke reference pressure standard directly connected to the calibration test computer" },
-                { url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=900&auto=format&fit=crop", caption: "5-point calibration sweep algorithm configuration screen and linearity error calculation" }
+                { url: "images/project3.svg", caption: "I/O wiring schematic for the FX3U PLC control panel" },
+                { url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=900&auto=format&fit=crop", caption: "Using Fluke 754 calibrator to calibrate the analog input loops for temperature sensors" }
             ],
-            challenge: "Thousands of offshore instruments required annual calibration. Manual recording at 5 test points (0–100%), computing linearity error in Excel, and managing ISO 17025 calibration certificates was time-consuming and error-prone.",
-            solution: "Developed an integrated hardware and software automation system. Connected Fluke 754 via HART/RS232. Built a Python application to automatically read measurements, verify pressure stability, compute measurement uncertainty, and export tamper-proof PDF calibration certificates.",
-            result: "Calibration time per instrument reduced from 45 minutes to 12 minutes (>70% savings). Manual data entry errors eliminated entirely. Software approved as compliant with the lab's ISO/IEC 17025 quality procedures."
+            challenge: "A mechanical workshop needed a fire safety upgrade integrating live temperature readouts. It was critical to strictly control the error tolerances of the PT100 RTD temperature sensors in drying ovens and calibrate the analog loops back to the PLC to trigger emergency exhaust fans precisely at 85°C.",
+            solution: "Designed an FX3U PLC panel with a Delta HMI. Used a Fluke 754 process calibrator to simulate RTD inputs to verify PLC analog input integrity. Analyzed sensor transmitter drift and added static linear compensation formulas directly in the PLC software.",
+            result: "Achieved temperature setpoint activation accuracy within ±0.5°C at the 85°C limit. The Delta HMI displays real-time temperature telemetry, alarm logs, and real-time sensor offset indicators."
         }
     },
     "project-4": {
         vi: {
-            title: "Kiểm toán & Đánh giá Sai số Hệ thống Đo khí Mỏ Bạch Hổ",
-            category: "Assessment",
-            tags: ["Uncertainty", "Audit", "API MPMS", "AGA 8", "ISO 5168", "Orifice Meter"],
-            duration: "04 Tháng (2022)",
-            role: "Kỹ sư kiểm toán đo lường độc lập (Independent Auditor)",
-            standards: "ISO 5168 (Measurement Uncertainty), AGA Report No. 3 (Orifice Metering), API MPMS Chapter 21.1",
-            technologies: "Phần mềm tính toán sai số chuyên ngành SolveMet, Phân tích thành phần khí từ sắc ký",
+            title: "Hệ thống lấy mẫu khí tự động (Tàu vận tải dầu)",
+            category: "Specialized Automation",
+            tags: ["Trích mẫu khí", "Tàu dầu", "PLC Mitsubishi", "Hiệu chuẩn phân tích", "Hàng hải"],
+            duration: "07 Tháng (2024)",
+            role: "Kỹ sư Điện & Lập trình Tự động hóa",
+            standards: "SOLAS (Safety of Life at Sea), ClassNK Rules for Marine Installations",
+            technologies: "PLC Mitsubishi Q-Series, Van điện khí nén SMC, Hệ sắc ký phân tích dòng chảy, Tủ điện hàng hải IP66",
             images: [
-                { url: "images/project4.svg", caption: "Kiểm tra hiện trạng cơ lý của tấm Orifice Plate đo dòng khí tại giàn" },
-                { url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=900&auto=format&fit=crop", caption: "Phiên họp thống nhất dữ liệu kiểm toán sai số giữa các đơn vị liên doanh" }
+                { url: "images/project4.svg", caption: "Thiết kế cơ cấu lấy mẫu khí nén trích từ hầm chứa tàu dầu" },
+                { url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=900&auto=format&fit=crop", caption: "Lập trình kiểm nghiệm truyền thông Modbus giữa PLC Q-Series và thiết bị đo" }
             ],
-            challenge: "Hệ thống đo lường khí xuất khẩu từ mỏ Bạch Hổ sử dụng Orifice Metering phát sinh tranh chấp số liệu khối lượng giữa bên khai thác và bên vận chuyển đường ống. Cần kiểm toán độc lập đánh giá hiện trạng cơ lý thiết bị, kiểm tra cấu hình Flow Computer và tính toán chính xác Uncertainty Analysis toàn trạm.",
-            solution: "Tháo kiểm tra hình học tấm Orifice (độ sắc cạnh, độ phẳng). Kiểm tra DP Transmitters bằng thiết bị chuẩn áp suất. Kết xuất log cấu hình Flow Computer để so sánh với thiết kế gốc. Sử dụng giải thuật ISO 5168 và mô hình toán học AGA 3 để lập mô hình đánh giá sai số toàn trạm.",
-            result: "Phát hiện sai lệch 0.45% do DP Transmitter bị Zero-drift và cấu hình sai hệ số giãn nở Orifice. Sau hiệu chuẩn lại, sai số giảm về 0.22% (đạt yêu cầu thương mại). Báo cáo được cả hai bên chấp thuận, giải quyết tranh chấp tài chính và thiết lập quy trình kiểm tra định kỳ chặt chẽ hơn."
+            challenge: "Giám sát nồng độ khí hydrocarbon trong khoang chứa tàu dầu trong quá trình vận chuyển đường biển. Hệ thống lấy mẫu khí hút khí nén tự động theo chu kỳ về buồng đo trung tâm. Khó khăn nằm ở việc bù sai lệch dòng khí do chênh lệch áp suất đường ống dài và duy trì độ chính xác của cảm biến đo trong môi trường rung lắc hàng hải mạnh.",
+            solution: "Ứng dụng PLC Mitsubishi Q-Series điều khiển tuần tự hệ thống van SMC lấy mẫu. Thiết kế bộ lọc mẫu và ổn định áp suất. Thực hiện hiệu chuẩn buồng đo và tính toán độ không đảm bảo đo liên quan tới lưu lượng trích mẫu, đưa giải thuật bù sai số áp suất động vào chương trình điều khiển.",
+            result: "Hệ thống vận hành chính xác đạt tiêu chuẩn đăng kiểm hàng hải quốc tế. Giúp chủ tàu theo dõi trực quan các thông số nồng độ khí cháy nổ, bảo đảm an toàn cháy nổ tuyệt đối trong suốt hải trình."
         },
         en: {
-            title: "Gas Metering System Audit & Uncertainty Assessment – Bach Ho Field",
-            category: "Assessment",
-            tags: ["Uncertainty", "Audit", "API MPMS", "AGA 8", "ISO 5168", "Orifice Meter"],
-            duration: "04 Months (2022)",
-            role: "Independent Metrological Auditor",
-            standards: "ISO 5168 (Measurement Uncertainty), AGA Report No. 3 (Orifice Metering), API MPMS Chapter 21.1",
-            technologies: "SolveMet uncertainty calculation software, Gas composition analysis from chromatograph",
+            title: "Automatic Gas Sampling System (Oil Tanker Ship)",
+            category: "Specialized Automation",
+            tags: ["Gas Sampling", "Oil Tankers", "Mitsubishi PLC", "Calibration Analysis", "Marine"],
+            duration: "07 Months (2024)",
+            role: "Electrical & Lead Automation Engineer",
+            standards: "SOLAS (Safety of Life at Sea), ClassNK Rules for Marine Installations",
+            technologies: "Mitsubishi Q-Series PLC, SMC Pneumatic Valves, Stream Analyzer, IP66 Marine Panel",
             images: [
-                { url: "images/project4.svg", caption: "Physical inspection of Orifice Plate geometry (edge sharpness & flatness) at the offshore platform" },
-                { url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=900&auto=format&fit=crop", caption: "Joint-venture audit review session to reconcile metering uncertainty data" }
+                { url: "images/project4.svg", caption: "Mechanical layout of the pneumatic gas extraction system for tanker cargo holds" },
+                { url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=900&auto=format&fit=crop", caption: "Programming and testing Modbus communication between the Q-Series PLC and the analyzer" }
             ],
-            challenge: "An export gas metering system at Bach Ho field using Orifice Metering technology triggered a volume data dispute between the producing and pipeline transport entities. An independent audit was required to assess equipment physical condition, verify Flow Computer configuration, and compute a rigorous total system Uncertainty Analysis.",
-            solution: "Performed physical inspection of Orifice Plate geometry (edge sharpness & flatness per AGA 3). Checked DP Transmitters against reference pressure standards. Extracted Flow Computer configuration logs and compared against original design documentation. Applied ISO 5168 error propagation and AGA 3 mathematical models for full-station uncertainty modeling.",
-            result: "Identified a 0.45% flow deviation caused by DP Transmitter zero-drift and incorrect Orifice expansion factor configuration. After recalibration and parameter correction, system uncertainty reduced to 0.22% (meeting commercial requirements). The audit report was accepted by both parties, resolving the financial dispute and establishing a rigorous periodic inspection protocol."
+            challenge: "Monitoring hydrocarbon gas concentrations in oil cargo tanks during transit. The sampling system cycles pneumatic suction lines to pull gas samples back to a central analyzer. The main difficulty lay in compensating for sample flow errors caused by pressure drops along long pipes, alongside keeping sensors accurate amidst marine vibrations.",
+            solution: "Utilized a Mitsubishi Q-Series PLC to manage SMC valve sequences. Integrated a sample filtration and pressure-stabilization system. Calibrated the measuring cell, performed uncertainty calculations regarding extraction flow rate, and coded dynamic pressure error compensations.",
+            result: "The system achieved full international maritime register certification. It provides ship operators with real-time LEL telemetry, ensuring complete fire safety compliance throughout sea journeys."
         }
     }
 };
@@ -375,7 +357,7 @@ function applyLanguage(lang) {
         if (link) link.textContent = t.nav[id];
     });
 
-    // PROFILE SECTION
+    // PROFILE SECTION & ALL TRANSLATED TEXTS
     document.querySelectorAll("[data-i18n]").forEach(el => {
         const key = el.getAttribute("data-i18n");
         const keys = key.split(".");
@@ -575,6 +557,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Go to slide helper
     function goToSlide(index) {
         if (index >= carouselSlides.length) activeCarouselIndex = 0;
         else if (index < 0) activeCarouselIndex = carouselSlides.length - 1;
