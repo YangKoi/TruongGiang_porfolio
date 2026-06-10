@@ -4,11 +4,20 @@
 const i18n = {
     vi: {
         nav: {
+            home: "Trang chủ",
             about: "Giới thiệu",
             skills: "Kỹ năng",
             experience: "Kinh nghiệm",
             projects: "Dự án",
             contact: "Liên hệ"
+        },
+        hero: {
+            name: "Nguyễn Đình Trường Giang",
+            subtitle: "Kỹ sư Điện & Tự động hóa",
+            tagline: "Chuyên môn thiết kế hệ thống điều khiển PLC/HMI & Hiệu chuẩn đo lường công nghiệp",
+            btnAbout: "Về tôi",
+            btnProjects: "Xem dự án",
+            scrollText: "Cuộn xuống"
         },
         profile: {
             name: "Nguyễn Đình Trường Giang",
@@ -35,7 +44,7 @@ const i18n = {
         },
         skills: {
             sectionTag: "Năng lực Kỹ thuật",
-            heading: "Kỹ Năng & Công Nghệ Chuyên Ngành",
+            heading: "Kỹ Năng & Công Nghệ",
             subtitle: "Sự kết hợp giữa chuyên môn hiệu chuẩn đo lường vật lý chuẩn xác và lập trình điều khiển tự động hóa công nghiệp.",
             cat1: "Tự động hóa & Lập trình",
             cat2: "Hiệu chuẩn & Đo lường",
@@ -43,7 +52,7 @@ const i18n = {
         },
         experience: {
             sectionTag: "Hành trình Sự nghiệp",
-            heading: "Kinh Nghiệm Làm Việc & Học Vấn",
+            heading: "Kinh Nghiệm & Học Vấn",
             subtitle: "Dòng thời gian ghi nhận các hoạt động đóng góp thực tế trong lĩnh vực tự động hóa và hiệu chuẩn đo lường thiết bị.",
             job1Title: "Kỹ sư Điện - Tự động hóa & Đo lường",
             job1Company: "Riken Viet Gas Detector Technology Co., Ltd",
@@ -61,7 +70,7 @@ const i18n = {
             sectionTag: "Thành quả Thực tiễn",
             heading: "Dự Án Điển Hình Đã Thực Hiện",
             subtitle: "Danh sách các dự án thiết kế, lập trình tự động hóa và hiệu chuẩn đo lường thiết bị rò rỉ khí tiêu biểu.",
-            viewMore: "Xem chi tiết & Ảnh"
+            viewMore: "Xem chi tiết"
         },
         contact: {
             sectionTag: "Kết nối Công việc",
@@ -80,7 +89,7 @@ const i18n = {
         },
         footer: {
             tagline: "Chính xác tối đa • An toàn tối ưu • Vận hành bền bỉ",
-            copyright: "Cốt lõi mã nguồn lưu trữ tại"
+            copyright: "Mã nguồn lưu trữ tại"
         },
         modal: {
             loading: "Đang tải chi tiết dự án...",
@@ -96,11 +105,20 @@ const i18n = {
     },
     en: {
         nav: {
+            home: "Home",
             about: "About",
             skills: "Skills",
             experience: "Experience",
             projects: "Projects",
             contact: "Contact"
+        },
+        hero: {
+            name: "Nguyen Dinh Truong Giang",
+            subtitle: "Electrical & Automation Engineer",
+            tagline: "Specializing in PLC/HMI control systems design & Industrial metrology calibration",
+            btnAbout: "About Me",
+            btnProjects: "View Projects",
+            scrollText: "Scroll Down"
         },
         profile: {
             name: "Nguyen Dinh Truong Giang",
@@ -127,7 +145,7 @@ const i18n = {
         },
         skills: {
             sectionTag: "Technical Competencies",
-            heading: "Skills & Specialized Technologies",
+            heading: "Skills & Technologies",
             subtitle: "A combination of physical measurement calibration precision and industrial automation control systems programming.",
             cat1: "Automation & Programming",
             cat2: "Calibration & Metrology",
@@ -153,7 +171,7 @@ const i18n = {
             sectionTag: "Real-World Achievements",
             heading: "Featured Projects",
             subtitle: "A portfolio of technical projects involving PLC programming, system integration, and gas sensor calibration.",
-            viewMore: "View Details & Images"
+            viewMore: "View Details"
         },
         contact: {
             sectionTag: "Professional Inquiries",
@@ -202,7 +220,7 @@ const projectsData = {
             standards: "TCVN/ISO/IEC 17025, TCVN 6112, OIML R111",
             technologies: "PLC Siemens S7-1200, Đầu dò khí Riken Keiki, Màn hình HMI Siemens, AutoCAD Electrical",
             images: [
-                { url: "images/project1.svg", caption: "Sơ đồ bố trí hệ thống giám sát 12 đầu dò khí độc quanh nhà xưởng" },
+                { url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=900&auto=format&fit=crop", caption: "Đường ống dẫn khí và cụm cảm biến đo lưu lượng hóa chất tại phân xưởng" },
                 { url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=900&auto=format&fit=crop", caption: "Đấu nối tủ điều khiển PLC Siemens và chạy thử loop test các kênh đo" }
             ],
             challenge: "Nhà máy hóa chất sinh ra nhiều khí độc dễ cháy nổ, đòi hỏi sai số giám sát cực thấp. Tín hiệu truyền từ 12 cảm biến khoảng cách xa bị suy hao dòng 4-20mA, dẫn đến lệch kết quả. Ngoài ra, việc xác định độ không đảm bảo đo của từng điểm cảm biến để lập bảng bù sai số là bắt buộc để đáp ứng quy định kiểm định môi trường hóa chất.",
@@ -218,7 +236,7 @@ const projectsData = {
             standards: "ISO/IEC 17025, TCVN 6112, OIML R111",
             technologies: "Siemens S7-1200 PLC, Riken Keiki Gas Detectors, Siemens HMI, AutoCAD Electrical",
             images: [
-                { url: "images/project1.svg", caption: "Layout of the 12 gas detectors positioned around the factory facility" },
+                { url: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=900&auto=format&fit=crop", caption: "Gas piping and sensor array layout within the factory" },
                 { url: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=900&auto=format&fit=crop", caption: "Wiring the Siemens PLC control panel and testing loops for all channels" }
             ],
             challenge: "The chemical plant emits hazardous gases, requiring extremely low monitoring tolerances. Analog 4-20mA signals from 12 long-distance detectors suffered from signal drop and interference. Additionally, calculating the precise measurement uncertainty for each detector to program correction factors was mandatory to satisfy local regulatory standards.",
@@ -236,7 +254,7 @@ const projectsData = {
             standards: "NFPA 72 (National Fire Alarm Code), ISO 12100",
             technologies: "Đầu dò khí nổ LEL, Solenoid kích dập lửa, PLC Mitsubishi, Giao diện HMI Delta",
             images: [
-                { url: "images/project2.svg", caption: "Bản vẽ tủ điều khiển tích hợp báo động gas và dập lửa tự động" },
+                { url: "https://images.unsplash.com/photo-1598153346810-860daa814c4b?q=80&w=900&auto=format&fit=crop", caption: "Màn hình trung tâm quản lý cảnh báo rò rỉ khí và báo cháy thời gian thực" },
                 { url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop", caption: "Cài đặt và kiểm tra cảm biến áp suất xả khí dập lửa" }
             ],
             challenge: "Hệ thống tích hợp 11 cảm biến LEL khí dễ cháy kết hợp van kích solenoid dập lửa tự động. Yêu cầu đặt ra là tuyệt đối không được báo động giả (False alarm) gây phun bọt dập lửa ngoài ý muốn gây hại cho máy móc cơ khí, đồng thời vẫn phải bảo đảm phản ứng tức thì khi có rò rỉ khí thực tế.",
@@ -252,8 +270,8 @@ const projectsData = {
             standards: "NFPA 72 (National Fire Alarm Code), ISO 12100",
             technologies: "LEL Gas Detectors, Solenoid Actuators, Mitsubishi PLC, Delta HMI",
             images: [
-                { url: "images/project2.svg", caption: "Control cabinet schematic showing integrated gas alarms and extinguishing logic" },
-                { url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop", caption: "Installing and testing the fire-extinguishing pressure release sensors" }
+                { url: "https://images.unsplash.com/photo-1598153346810-860daa814c4b?q=80&w=900&auto=format&fit=crop", caption: "Central monitoring room console tracking gas safety diagnostics" },
+                { url: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=900&auto=format&fit=crop", caption: "Installing and testing the fire-suppression pressure release sensors" }
             ],
             challenge: "Integrating 11 flammable LEL gas sensors with automatic solenoid-triggered fire suppression. The primary challenge was to prevent any false alarms that could trigger accidental chemical discharge (which would ruin expensive mechanical equipment), while ensuring rapid response during real leaks.",
             solution: "Implemented a Mitsubishi PLC with 2-out-of-3 voting logic for sensor validation. Performed combined measurement uncertainty calculations for the LEL sensor array. Established a 3-month calibration cycle evaluating zero and span drifts to neutralize sensor aging errors.",
@@ -270,7 +288,7 @@ const projectsData = {
             standards: "TCVN 3890 (Trang bị phòng cháy chữa cháy), IEC 61508 (SIL 2)",
             technologies: "PLC Mitsubishi FX3U, Màn hình HMI Delta, Cảm biến nhiệt độ và khói, Thiết bị kiểm chuẩn Fluke 754",
             images: [
-                { url: "images/project3.svg", caption: "Sơ đồ nguyên lý đấu nối ngoại vi hệ thống PLC FX3U" },
+                { url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&auto=format&fit=crop", caption: "Lắp đặt và hiệu chuẩn các mô-đun PLC Mitsubishi FX3U" },
                 { url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=900&auto=format&fit=crop", caption: "Sử dụng Fluke 754 hiệu chuẩn đầu vào Analog thu thập cảm biến nhiệt độ" }
             ],
             challenge: "Một xưởng sản xuất cơ khí yêu cầu nâng cấp hệ thống an toàn phòng cháy tích hợp đo đạc nhiệt độ trực quan. Cần kiểm soát chặt chẽ sai số của các cảm biến nhiệt độ RTD PT100 ở các lò sấy và căn chỉnh dòng analog thu thập dữ liệu về PLC để kích hoạt quạt hút nhiệt khẩn cấp chính xác ở 85°C.",
@@ -286,7 +304,7 @@ const projectsData = {
             standards: "TCVN 3890 (Fire Protection Equipment), IEC 61508 (SIL 2)",
             technologies: "Mitsubishi FX3U PLC, Delta HMI, RTD/Smoke Sensors, Fluke 754 Documenting Process Calibrator",
             images: [
-                { url: "images/project3.svg", caption: "I/O wiring schematic for the FX3U PLC control panel" },
+                { url: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=900&auto=format&fit=crop", caption: "Calibrating and programming FX3U PLC modules in the workshop" },
                 { url: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=900&auto=format&fit=crop", caption: "Using Fluke 754 calibrator to calibrate the analog input loops for temperature sensors" }
             ],
             challenge: "A mechanical workshop needed a fire safety upgrade integrating live temperature readouts. It was critical to strictly control the error tolerances of the PT100 RTD temperature sensors in drying ovens and calibrate the analog loops back to the PLC to trigger emergency exhaust fans precisely at 85°C.",
@@ -304,7 +322,7 @@ const projectsData = {
             standards: "SOLAS (Safety of Life at Sea), ClassNK Rules for Marine Installations",
             technologies: "PLC Mitsubishi Q-Series, Van điện khí nén SMC, Hệ sắc ký phân tích dòng chảy, Tủ điện hàng hải IP66",
             images: [
-                { url: "images/project4.svg", caption: "Thiết kế cơ cấu lấy mẫu khí nén trích từ hầm chứa tàu dầu" },
+                { url: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=900&auto=format&fit=crop", caption: "Tàu dầu vận hành trên biển, nơi hệ thống lấy mẫu khí bảo đảm an toàn cháy nổ" },
                 { url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=900&auto=format&fit=crop", caption: "Lập trình kiểm nghiệm truyền thông Modbus giữa PLC Q-Series và thiết bị đo" }
             ],
             challenge: "Giám sát nồng độ khí hydrocarbon trong khoang chứa tàu dầu trong quá trình vận chuyển đường biển. Hệ thống lấy mẫu khí hút khí nén tự động theo chu kỳ về buồng đo trung tâm. Khó khăn nằm ở việc bù sai lệch dòng khí do chênh lệch áp suất đường ống dài và duy trì độ chính xác của cảm biến đo trong môi trường rung lắc hàng hải mạnh.",
@@ -320,7 +338,7 @@ const projectsData = {
             standards: "SOLAS (Safety of Life at Sea), ClassNK Rules for Marine Installations",
             technologies: "Mitsubishi Q-Series PLC, SMC Pneumatic Valves, Stream Analyzer, IP66 Marine Panel",
             images: [
-                { url: "images/project4.svg", caption: "Mechanical layout of the pneumatic gas extraction system for tanker cargo holds" },
+                { url: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=900&auto=format&fit=crop", caption: "Crude oil tanker at sea requiring constant hydrocarbon safety gas sampling" },
                 { url: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=900&auto=format&fit=crop", caption: "Programming and testing Modbus communication between the Q-Series PLC and the analyzer" }
             ],
             challenge: "Monitoring hydrocarbon gas concentrations in oil cargo tanks during transit. The sampling system cycles pneumatic suction lines to pull gas samples back to a central analyzer. The main difficulty lay in compensating for sample flow errors caused by pressure drops along long pipes, alongside keeping sensors accurate amidst marine vibrations.",
@@ -351,10 +369,13 @@ function applyLanguage(lang) {
     }
 
     // NAV links
-    const navMap = ["about", "skills", "experience", "projects", "contact"];
+    const navMap = ["hero", "about", "skills", "experience", "projects", "contact"];
     navMap.forEach(id => {
         const link = document.querySelector(`.nav-link[href="#${id}"]`);
-        if (link) link.textContent = t.nav[id];
+        if (link) {
+            if (id === "hero") link.textContent = t.nav.home;
+            else link.textContent = t.nav[id];
+        }
     });
 
     // PROFILE SECTION & ALL TRANSLATED TEXTS
@@ -398,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1. Header scroll effect
     const header = document.getElementById("main-header");
     window.addEventListener("scroll", () => {
-        header.classList.toggle("scrolled", window.scrollY > 50);
+        header.classList.toggle("scrolled", window.scrollY > 80);
     });
 
     // 2. Mobile Navigation Drawer
@@ -421,9 +442,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // 3. Scrollspy active link
     const sections = document.querySelectorAll("section");
     window.addEventListener("scroll", () => {
-        let currentSection = "";
+        let currentSection = "hero";
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 120;
+            const sectionTop = section.offsetTop - 150;
             if (window.scrollY >= sectionTop && window.scrollY < sectionTop + section.clientHeight) {
                 currentSection = section.getAttribute("id");
             }
@@ -434,7 +455,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 4. Modal Popup Manager
-    const projectCards = document.querySelectorAll(".project-card");
+    const projectCards = document.querySelectorAll(".project-card-minimal");
     const projectModal = document.getElementById("project-modal");
     const modalClose = document.querySelector(".modal-close");
     const modalContent = document.querySelector(".modal-content");
@@ -471,7 +492,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 5. Dynamic HTML Generation for Modal
     function loadProjectDetails(data) {
         const t = i18n[currentLang];
-        const tagsHtml = data.tags.map(tag => `<span class="tag-item">${tag}</span>`).join('');
+        const tagsHtml = data.tags.map(tag => `<span class="tag-item-minimal">${tag}</span>`).join('');
         const slidesHtml = data.images.map((img, index) => `
             <div class="carousel-slide ${index === 0 ? 'active' : ''}" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('${img.url}')">
                 <div class="slide-caption">${img.caption}</div>
@@ -482,8 +503,8 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join('');
 
         modalContent.innerHTML = `
-            <div class="modal-project-header">
-                <span class="modal-badge">${data.category}</span>
+            <div class="modal-project-header-minimal">
+                <span class="modal-badge-minimal">${data.category}</span>
                 <h2>${data.title}</h2>
             </div>
             <div class="modal-carousel">
@@ -496,41 +517,41 @@ document.addEventListener("DOMContentLoaded", () => {
                 </button>
                 <div class="carousel-dots">${dotsHtml}</div>
             </div>
-            <div class="modal-grid">
-                <div class="modal-desc-col">
-                    <div class="modal-technical-block">
+            <div class="modal-grid-minimal">
+                <div class="modal-desc-col-minimal">
+                    <div class="modal-block-minimal">
                         <h5>${t.modal.challenge}</h5>
                         <p>${data.challenge}</p>
                     </div>
-                    <div class="modal-technical-block" style="border-left-color: var(--secondary)">
+                    <div class="modal-block-minimal">
                         <h5>${t.modal.solution}</h5>
                         <p>${data.solution}</p>
                     </div>
-                    <div class="modal-technical-block" style="border-left-color: var(--success)">
+                    <div class="modal-block-minimal">
                         <h5>${t.modal.result}</h5>
                         <p>${data.result}</p>
                     </div>
                 </div>
-                <div class="modal-details-col">
-                    <div class="detail-item">
+                <div class="modal-details-col-minimal">
+                    <div class="detail-item-minimal">
                         <span class="label">${t.modal.role}</span>
                         <span class="value">${data.role}</span>
                     </div>
-                    <div class="detail-item">
+                    <div class="detail-item-minimal">
                         <span class="label">${t.modal.duration}</span>
                         <span class="value">${data.duration}</span>
                     </div>
-                    <div class="detail-item">
+                    <div class="detail-item-minimal">
                         <span class="label">${t.modal.standards}</span>
                         <span class="value">${data.standards}</span>
                     </div>
-                    <div class="detail-item">
+                    <div class="detail-item-minimal">
                         <span class="label">${t.modal.tech}</span>
                         <span class="value">${data.technologies}</span>
                     </div>
-                    <div class="detail-item" style="margin-bottom:0;">
+                    <div class="detail-item-minimal" style="margin-bottom:0; border-bottom: none; padding-bottom: 0;">
                         <span class="label">${t.modal.tags}</span>
-                        <div class="tag-container">${tagsHtml}</div>
+                        <div class="tag-container-minimal">${tagsHtml}</div>
                     </div>
                 </div>
             </div>
@@ -570,7 +591,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function showNextSlide() { goToSlide(activeCarouselIndex + 1); }
     function showPrevSlide() { goToSlide(activeCarouselIndex - 1); }
 
-    // 7. Fade-in animations on scroll
+    // 7. Scroll Animations
     const scrollObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -578,9 +599,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 scrollObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
-    document.querySelectorAll(".profile-card, .intro-stats-column, .skills-category-card, .timeline-item, .project-card, .contact-box").forEach(el => {
+    document.querySelectorAll(".about-left, .about-right, .skills-category-minimal, .timeline-item-minimal, .project-card-minimal, .contact-box-minimal").forEach(el => {
         el.classList.add("scroll-animate");
         scrollObserver.observe(el);
     });

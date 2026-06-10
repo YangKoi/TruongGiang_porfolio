@@ -16,32 +16,25 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/avatar.svg">
     
-    <!-- Fonts: System Tahoma (Engineering Style) -->
-    <!-- No external font import needed — Tahoma is a built-in system font -->
+    <!-- Fonts: Work Sans from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Ambient Glows -->
-    <div class="ambient-glow glow-1"></div>
-    <div class="ambient-glow glow-2"></div>
-    <div class="ambient-glow glow-3"></div>
-
     <!-- Navigation Header -->
     <header id="main-header">
         <div class="header-container">
             <a href="#" class="logo">
-                <span class="logo-icon">
-                    <svg viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-                    </svg>
-                </span>
                 <span class="logo-text">Giang.<span>E&A</span></span>
             </a>
             
             <nav id="nav-menu">
                 <ul>
-                    <li><a href="#about" class="nav-link active" data-i18n="nav.about">Giới thiệu</a></li>
+                    <li><a href="#hero" class="nav-link active" data-i18n="nav.home">Trang chủ</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav.about">Giới thiệu</a></li>
                     <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Kỹ năng</a></li>
                     <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Kinh nghiệm</a></li>
                     <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Dự án</a></li>
@@ -60,24 +53,40 @@
         </div>
     </header>
 
+    <!-- SECTION 0: Hero Section (Full-Screen Industrial Background) -->
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <h1 data-i18n="hero.name">Nguyễn Đình Trường Giang</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Kỹ sư Điện & Tự động hóa</p>
+            <p class="hero-tagline" data-i18n="hero.tagline">Chuyên môn thiết kế hệ thống điều khiển PLC/HMI & Hiệu chuẩn đo lường công nghiệp</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary" data-i18n="hero.btnAbout">Về tôi</a>
+                <a href="#projects" class="btn btn-outline" data-i18n="hero.btnProjects">Xem dự án</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span data-i18n="hero.scrollText">Cuộn xuống</span>
+        </div>
+    </section>
+
     <!-- Main Content Layout -->
     <main>
         
-        <!-- SECTION 1: Profile & Intro -->
+        <!-- SECTION 1: About & Intro -->
         <section id="about" class="section-padding">
             <div class="container grid-two-cols">
                 <!-- Left: Profile Info Card -->
-                <div class="profile-card fade-in">
-                    <div class="profile-header">
-                        <div class="avatar-container">
-                            <img src="images/avatar.svg" alt="Nguyễn Đình Trường Giang" class="profile-avatar">
-                            <div class="status-indicator">
-                                <span class="pulse-dot"></span>
-                                <span data-i18n="profile.status">Sẵn sàng hợp tác</span>
-                            </div>
+                <div class="about-left fade-in">
+                    <div class="profile-header-minimal">
+                        <div class="avatar-container-minimal">
+                            <img src="images/avatar.svg" alt="Nguyễn Đình Trường Giang" class="profile-avatar-minimal">
                         </div>
-                        <div class="profile-title">
-                            <h1 data-i18n="profile.name">Nguyễn Đình Trường Giang</h1>
+                        <div class="profile-title-minimal">
+                            <h2 data-i18n="profile.name">Nguyễn Đình Trường Giang</h2>
                             <p class="subtitle" data-i18n="profile.subtitle">Kỹ sư Điện - Tự động hóa & Đo lường</p>
                             <p class="location-badge">
                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
@@ -88,94 +97,58 @@
                         </div>
                     </div>
                     
-                    <div class="profile-body">
-                        <p class="about-text" data-i18n="profile.about" data-i18n-html>
-                            Tôi là một Kỹ sư Điện & Tự động hóa với hơn 4 năm kinh nghiệm trong lĩnh vực đo lường khí, thiết bị đo lường và hệ thống điều khiển tại Riken Viet. Tôi chuyên sâu về hiệu chuẩn các thiết bị đo lường công nghiệp, tính toán độ không đảm bảo đo và đánh giá sai số sau hiệu chuẩn. Với kiến môn vững chắc trong lập trình PLC, thiết kế bản vẽ AutoCAD Electrical và cấu hình giao diện HMI/SCADA, tôi cam kết mang đến các giải pháp an toàn, chính xác và tối ưu hiệu suất vận hành.
-                        </p>
-                        
-                        <div class="contact-quick-list">
-                            <a href="mailto:trggiangiot@gmail.com" class="contact-item">
-                                <div class="icon-wrap email-icon">
-                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                    </svg>
-                                </div>
-                                <div class="contact-info">
-                                    <span class="label" data-i18n="profile.emailLabel">Email liên hệ</span>
-                                    <span class="value">trggiangiot@gmail.com</span>
-                                </div>
-                            </a>
+                    <p class="about-text-minimal" data-i18n="profile.about" data-i18n-html>
+                        Tôi là một Kỹ sư Điện & Tự động hóa với hơn 4 năm kinh nghiệm trong lĩnh vực đo lường khí, thiết bị đo lường và hệ thống điều khiển tại Riken Viet. Tôi chuyên sâu về hiệu chuẩn các thiết bị đo lường công nghiệp, tính toán độ không đảm bảo đo và đánh giá sai số sau hiệu chuẩn. Với kiến môn vững chắc trong lập trình PLC, thiết kế bản vẽ AutoCAD Electrical và cấu hình giao diện HMI/SCADA, tôi cam kết mang đến các giải pháp an toàn, chính xác và tối ưu hiệu suất vận hành.
+                    </p>
 
-                            <a href="tel:+84868784293" class="contact-item">
-                                <div class="icon-wrap phone-icon">
-                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                                    </svg>
-                                </div>
-                                <div class="contact-info">
-                                    <span class="label" data-i18n="profile.phoneLabel">Số điện thoại</span>
-                                    <span class="value">(+84) 868 784 293</span>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="social-links">
-                            <a href="https://github.com/YangKoi" target="_blank" class="social-btn github-btn" title="GitHub Profile">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.577.688.479C19.138 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-                                </svg>
-                                GitHub
-                            </a>
-                            <a href="https://github.com/YangKoi/TruongGiang_porfolio" target="_blank" class="social-btn repo-btn" title="Xem repository này">
-                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                                    <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/>
-                                </svg>
-                                Repository
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Right: Stats & Key Pillars -->
-                <div class="intro-stats-column fade-in">
-                    <div class="stats-grid">
-                        <div class="stat-box">
+                    <div class="stats-grid-minimal">
+                        <div class="stat-box-minimal">
                             <span class="stat-number">4+</span>
                             <span class="stat-label" data-i18n="stats.years">Năm kinh nghiệm</span>
                         </div>
-                        <div class="stat-box">
+                        <div class="stat-box-minimal">
                             <span class="stat-number">4</span>
                             <span class="stat-label" data-i18n="stats.projects">Dự án tiêu biểu</span>
                         </div>
-                        <div class="stat-box">
+                        <div class="stat-box-minimal">
                             <span class="stat-number">100%</span>
                             <span class="stat-label" data-i18n="stats.accuracy">Hiệu chuẩn chính xác</span>
                         </div>
                     </div>
-                    
-                    <div class="pillar-card">
+                </div>
+                
+                <!-- Right: Quick Contact & Core focus -->
+                <div class="about-right fade-in">
+                    <div class="pillar-card-minimal">
                         <h3 data-i18n="pillars.heading">Lĩnh Vực Hoạt Động Cốt Lõi</h3>
-                        <div class="pillar-item">
-                            <div class="pillar-bullet"></div>
-                            <div>
-                                <h4 data-i18n="pillars.p1Title">Hiệu chuẩn Thiết bị & Phân tích Sai số</h4>
-                                <p data-i18n="pillars.p1Desc">Thực hiện hiệu chuẩn chính xác các cảm biến đo đạc (Transmitters), đầu dò khí rò rỉ. Tính toán độ không đảm bảo đo (Uncertainty) và hiệu chỉnh sai số sau hiệu chuẩn đạt chuẩn chất lượng.</p>
-                            </div>
+                        <div class="pillar-item-minimal">
+                            <h4 data-i18n="pillars.p1Title">Hiệu chuẩn Thiết bị & Phân tích Sai số</h4>
+                            <p data-i18n="pillars.p1Desc">Thực hiện hiệu chuẩn chính xác các cảm biến đo đạc (Transmitters), đầu dò khí rò rỉ. Tính toán độ không đảm bảo đo (Uncertainty) và hiệu chỉnh sai số sau hiệu chuẩn đạt chuẩn chất lượng.</p>
                         </div>
-                        <div class="pillar-item">
-                            <div class="pillar-bullet"></div>
-                            <div>
-                                <h4 data-i18n="pillars.p2Title">Tự động hóa & Lập trình PLC/HMI</h4>
-                                <p data-i18n="pillars.p2Desc">Lập trình hệ điều khiển PLC (Siemens, Mitsubishi, Omron), thiết kế màn hình vận hành HMI (Siemens, Mitsubishi, Delta) và tích hợp tủ điện công nghiệp.</p>
-                            </div>
+                        <div class="pillar-item-minimal">
+                            <h4 data-i18n="pillars.p2Title">Tự động hóa & Lập trình PLC/HMI</h4>
+                            <p data-i18n="pillars.p2Desc">Lập trình hệ điều khiển PLC (Siemens, Mitsubishi, Omron), thiết kế màn hình vận hành HMI (Siemens, Mitsubishi, Delta) và tích hợp tủ điện công nghiệp.</p>
                         </div>
-                        <div class="pillar-item">
-                            <div class="pillar-bullet"></div>
-                            <div>
-                                <h4 data-i18n="pillars.p3Title">Bản vẽ Kỹ thuật & Thiết kế AutoCAD</h4>
-                                <p data-i18n="pillars.p3Desc">Thiết kế bản vẽ tủ điện điều khiển, sơ đồ nguyên lý đấu nối thiết bị đo lường và hệ thống giám sát rò rỉ khí bằng AutoCAD Electrical.</p>
-                            </div>
+                        <div class="pillar-item-minimal">
+                            <h4 data-i18n="pillars.p3Title">Bản vẽ Kỹ thuật & Thiết kế AutoCAD</h4>
+                            <p data-i18n="pillars.p3Desc">Thiết kế bản vẽ tủ điện điều khiển, sơ đồ nguyên lý đấu nối thiết bị đo lường và hệ thống giám sát rò rỉ khí bằng AutoCAD Electrical.</p>
                         </div>
+                    </div>
+
+                    <div class="contact-quick-list-minimal">
+                        <a href="mailto:trggiangiot@gmail.com" class="contact-item-minimal">
+                            <span class="label" data-i18n="profile.emailLabel">Email liên hệ</span>
+                            <span class="value">trggiangiot@gmail.com</span>
+                        </a>
+                        <a href="tel:+84868784293" class="contact-item-minimal">
+                            <span class="label" data-i18n="profile.phoneLabel">Số điện thoại</span>
+                            <span class="value">(+84) 868 784 293</span>
+                        </a>
+                    </div>
+                    
+                    <div class="social-links-minimal">
+                        <a href="https://github.com/YangKoi" target="_blank" class="btn btn-outline-small">GitHub</a>
+                        <a href="https://github.com/YangKoi/TruongGiang_porfolio" target="_blank" class="btn btn-outline-small">Repository</a>
                     </div>
                 </div>
             </div>
@@ -186,63 +159,42 @@
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-tag" data-i18n="skills.sectionTag">Năng lực Kỹ thuật</span>
-                    <h2 data-i18n="skills.heading">Kỹ Năng & Công Nghệ Chuyên Ngành</h2>
+                    <h2 data-i18n="skills.heading">Kỹ Năng & Công Nghệ</h2>
                     <p class="section-subtitle" data-i18n="skills.subtitle">Sự kết hợp giữa chuyên môn hiệu chuẩn đo lường vật lý chuẩn xác và lập trình điều khiển tự động hóa công nghiệp.</p>
                 </div>
                 
-                <div class="skills-grid">
+                <div class="skills-grid-minimal">
                     <!-- Skills Group 1 -->
-                    <div class="skills-category-card">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="skills.cat1">Tự động hóa & Lập trình</h3>
-                        </div>
-                        <ul class="skills-list">
-                            <li><span>Lập trình PLC - LAD, SCL, FBD (Siemens, Mitsubishi, Omron)</span><div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div></li>
-                            <li><span>Thiết kế HMI (Siemens, Mitsubishi, Delta) & SCADA (C#)</span><div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div></li>
-                            <li><span>Thiết kế - Thi công hệ thống tự động hóa</span><div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></li>
-                            <li><span>Đấu nối, lắp đặt tủ điện điều khiển</span><div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div></li>
+                    <div class="skills-category-minimal">
+                        <h3 data-i18n="skills.cat1">Tự động hóa & Lập trình</h3>
+                        <ul class="skills-list-minimal">
+                            <li>Lập trình PLC - LAD, SCL, FBD (Siemens, Mitsubishi, Omron)</li>
+                            <li>Thiết kế HMI (Siemens, Mitsubishi, Delta) & SCADA (C#)</li>
+                            <li>Thiết kế - Thi công hệ thống tự động hóa</li>
+                            <li>Đấu nối, lắp đặt tủ điện điều khiển</li>
                         </ul>
                     </div>
 
                     <!-- Skills Group 2 -->
-                    <div class="skills-category-card">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                                    <path d="M20 18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="skills.cat2">Hiệu chuẩn & Đo lường</h3>
-                        </div>
-                        <ul class="skills-list">
-                            <li><span>Hiệu chuẩn thiết bị đo lường (Cảm biến, Đầu dò)</span><div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div></li>
-                            <li><span>Tính toán độ không đảm bảo đo (Measurement Uncertainty)</span><div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div></li>
-                            <li><span>Phân tích sai số sau hiệu chuẩn (Error & Drift Analysis)</span><div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div></li>
-                            <li><span>Hệ thống giám sát rò rỉ khí (Gas Monitoring Systems)</span><div class="skill-bar"><div class="skill-progress" style="width: 94%"></div></div></li>
-                            <li><span>Bảo trì, sửa chữa thiết bị điện tử đo lường</span><div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div></li>
+                    <div class="skills-category-minimal">
+                        <h3 data-i18n="skills.cat2">Hiệu chuẩn & Đo lường</h3>
+                        <ul class="skills-list-minimal">
+                            <li>Hiệu chuẩn thiết bị đo lường (Cảm biến, Đầu dò)</li>
+                            <li>Tính toán độ không đảm bảo đo (Measurement Uncertainty)</li>
+                            <li>Phân tích sai số sau hiệu chuẩn (Error & Drift Analysis)</li>
+                            <li>Hệ thống giám sát rò rỉ khí (Gas Monitoring Systems)</li>
+                            <li>Bảo trì, sửa chữa thiết bị điện tử đo lường</li>
                         </ul>
                     </div>
 
                     <!-- Skills Group 3 -->
-                    <div class="skills-category-card">
-                        <div class="category-header">
-                            <div class="category-icon">
-                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-                                </svg>
-                            </div>
-                            <h3 data-i18n="skills.cat3">Thiết kế & Công cụ</h3>
-                        </div>
-                        <ul class="skills-list">
-                            <li><span>AutoCAD & AutoCAD Electrical Drawing</span><div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div></li>
-                            <li><span>Lập trình nhúng & Kỹ thuật (Python, C)</span><div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div></li>
-                            <li><span>Microsoft Office (Excel, Word, PowerPoint)</span><div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div></li>
-                            <li><span>Dịch vụ khách hàng chất lượng (Customer Service)</span><div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div></li>
+                    <div class="skills-category-minimal">
+                        <h3 data-i18n="skills.cat3">Thiết kế & Công cụ</h3>
+                        <ul class="skills-list-minimal">
+                            <li>AutoCAD & AutoCAD Electrical Drawing</li>
+                            <li>Lập trình nhúng & Kỹ thuật (Python, C)</li>
+                            <li>Microsoft Office (Excel, Word, PowerPoint)</li>
+                            <li>Dịch vụ khách hàng chất lượng (Customer Service)</li>
                         </ul>
                     </div>
                 </div>
@@ -254,17 +206,16 @@
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-tag" data-i18n="experience.sectionTag">Hành trình Sự nghiệp</span>
-                    <h2 data-i18n="experience.heading">Kinh Nghiệm Làm Việc & Học Vấn</h2>
+                    <h2 data-i18n="experience.heading">Kinh Nghiệm & Học Vấn</h2>
                     <p class="section-subtitle" data-i18n="experience.subtitle">Dòng thời gian ghi nhận các hoạt động đóng góp thực tế trong lĩnh vực tự động hóa và hiệu chuẩn đo lường thiết bị.</p>
                 </div>
                 
-                <div class="timeline-container">
+                <div class="timeline-container-minimal">
                     
                     <!-- Timeline Item 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">2020 - 2025</div>
-                        <div class="timeline-content card-glass">
+                    <div class="timeline-item-minimal">
+                        <div class="timeline-year">2020 - 2025</div>
+                        <div class="timeline-content-minimal">
                             <h3 data-i18n="experience.job1Title">Kỹ sư Điện - Tự động hóa & Đo lường</h3>
                             <span class="organization" data-i18n="experience.job1Company">Riken Viet Gas Detector Technology Co., Ltd</span>
                             <p class="timeline-desc" data-i18n="experience.job1Desc">
@@ -274,26 +225,23 @@
                     </div>
 
                     <!-- Timeline Item 2 - Education -->
-                    <div class="timeline-item education-item">
-                        <div class="timeline-dot special-dot"></div>
-                        <div class="timeline-date" data-i18n="experience.eduSectionTag">Học Vấn & Chứng Chỉ Chuyên Ngành</div>
-                        <div class="timeline-content card-glass special-content">
+                    <div class="timeline-item-minimal">
+                        <div class="timeline-year" data-i18n="experience.eduSectionTag">Học vấn & Chứng chỉ</div>
+                        <div class="timeline-content-minimal">
                             <h3 data-i18n="experience.eduTitle">Học vấn & Chứng chỉ</h3>
-                            <ul class="education-list">
+                            <ul class="education-list-minimal">
                                 <li>
                                     <strong data-i18n="experience.edu1">Kỹ sư Công nghệ Kỹ thuật Điện - Điện tử</strong>
-                                    <span data-i18n="experience.edu1Org">Đại học Công nghiệp Thực phẩm TP.HCM (HUFI/HUIT) | 2016 - 2020</span>
-                                    <p style="font-size: 0.85rem; color: var(--text-sub); margin-top: 4px;">
-                                        GPA: 2.80 - Xếp loại Khá. Thành viên Câu lạc bộ Lập trình PLC khoa Điện. Tham gia các cuộc thi Robocon: robot dò đường, robot tự cân bằng...
-                                    </p>
+                                    <span class="edu-detail">Đại học Công nghiệp Thực phẩm TP.HCM (HUFI/HUIT) | 2016 - 2020</span>
+                                    <p class="edu-sub">GPA: 2.80 - Xếp loại Khá. Thành viên Câu lạc bộ Lập trình PLC khoa Điện. Tham gia các cuộc thi Robocon: robot dò đường, robot tự cân bằng...</p>
                                 </li>
                                 <li>
                                     <strong data-i18n="experience.edu2">Chứng chỉ Tiếng Anh VSTEP B1</strong>
-                                    <span data-i18n="experience.edu2Org">Trường Đại học Sư phạm TP. Hồ Chí Minh | 2024</span>
+                                    <span class="edu-detail">Trường Đại học Sư phạm TP. Hồ Chí Minh | 2024</span>
                                 </li>
                                 <li>
                                     <strong data-i18n="experience.edu3">Chứng chỉ Kỹ năng Hiệu chuẩn & Đánh giá Sai số Đo lường</strong>
-                                    <span data-i18n="experience.edu3Org">Trung tâm Đào tạo Kỹ thuật Đo lường Chất lượng</span>
+                                    <span class="edu-detail">Trung tâm Đào tạo Kỹ thuật Đo lường Chất lượng</span>
                                 </li>
                             </ul>
                         </div>
@@ -307,79 +255,75 @@
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-tag" data-i18n="projects.sectionTag">Thành quả Thực tiễn</span>
-                    <h2 data-i18n="projects.heading">Dự Án Điển Hình Đã Thực Hiện</h2>
+                    <h2 data-i18n="projects.heading">Dự Án Điển Hình</h2>
                     <p class="section-subtitle" data-i18n="projects.subtitle">Danh sách các dự án thiết kế, lập trình tự động hóa và hiệu chuẩn đo lường thiết bị rò rỉ khí tiêu biểu.</p>
                 </div>
                 
-                <div class="projects-grid">
+                <div class="projects-grid-minimal">
                     <!-- Project Card 1 -->
-                    <div class="project-card" data-project="project-1">
-                        <div class="project-image-wrapper">
-                            <div class="project-gradient-overlay"></div>
-                            <img src="images/project1.svg" alt="Hệ thống giám sát khí 12 kênh">
-                            <span class="project-badge">Automation & Calibration</span>
+                    <div class="project-card-minimal" data-project="project-1">
+                        <div class="project-image-wrapper-minimal">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=800&auto=format&fit=crop" alt="Hệ thống giám sát khí 12 kênh" class="project-img">
+                            <div class="project-hover-overlay">
+                                <span class="project-badge">Automation & Calibration</span>
+                            </div>
                         </div>
-                        <div class="project-info">
-                            <h3>Hệ thống giám sát khí 12 kênh (Nhà máy hóa chất Đồng Nai)</h3>
-                            <p class="project-summary">Hệ thống giám sát khí bao gồm 12 đầu dò khí độc, tủ PLC 24/7 kiểm soát thiết bị ngoại vi, thực hiện hiệu chuẩn các cảm biến khí và xác định sai số.</p>
-                            <span class="btn-more" data-i18n="projects.viewMore">Xem chi tiết & Ảnh
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                                </svg>
+                        <div class="project-info-minimal">
+                            <h3>Hệ thống giám sát khí 12 kênh (Đồng Nai)</h3>
+                            <p class="project-summary-minimal">Giám sát khí độc 12 cảm biến tại nhà máy hóa chất, điều khiển PLC 24/7, hiệu chuẩn mẫu khí chuẩn và thiết lập bảng tính toán bù sai số sau hiệu chuẩn.</p>
+                            <span class="btn-more-minimal">
+                                <span data-i18n="projects.viewMore">Xem chi tiết</span> &rarr;
                             </span>
                         </div>
                     </div>
 
                     <!-- Project Card 2 -->
-                    <div class="project-card" data-project="project-2">
-                        <div class="project-image-wrapper">
-                            <div class="project-gradient-overlay"></div>
-                            <img src="images/project2.svg" alt="Hệ thống báo cháy dập lửa">
-                            <span class="project-badge">Safety System</span>
+                    <div class="project-card-minimal" data-project="project-2">
+                        <div class="project-image-wrapper-minimal">
+                            <img src="https://images.unsplash.com/photo-1598153346810-860daa814c4b?q=80&w=800&auto=format&fit=crop" alt="Hệ thống báo cháy dập lửa" class="project-img">
+                            <div class="project-hover-overlay">
+                                <span class="project-badge">Safety System</span>
+                            </div>
                         </div>
-                        <div class="project-info">
-                            <h3>Hệ thống giám sát khí cháy nổ, báo cháy & dập lửa (VSIP I)</h3>
-                            <p class="project-summary">Tích hợp 11 đầu dò khí cháy nổ cùng hệ thống cảnh báo và dập lửa tự động. Thực hiện tính toán độ không đảm bảo đo hạn chế báo động giả.</p>
-                            <span class="btn-more" data-i18n="projects.viewMore">Xem chi tiết & Ảnh
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                                </svg>
+                        <div class="project-info-minimal">
+                            <h3>Hệ thống giám sát khí cháy nổ & dập lửa (VSIP I)</h3>
+                            <p class="project-summary-minimal">Tích hợp 11 đầu dò khí LEL, lập trình logic khóa chéo trên PLC để chống báo động giả (False Alarm) và kích hoạt solenoid dập lửa tự động an toàn.</p>
+                            <span class="btn-more-minimal">
+                                <span data-i18n="projects.viewMore">Xem chi tiết</span> &rarr;
                             </span>
                         </div>
                     </div>
 
                     <!-- Project Card 3 -->
-                    <div class="project-card" data-project="project-3">
-                        <div class="project-image-wrapper">
-                            <div class="project-gradient-overlay"></div>
-                            <img src="images/project3.svg" alt="PLC Gas and Fire Safety System">
-                            <span class="project-badge">PLC & Calibration</span>
+                    <div class="project-card-minimal" data-project="project-3">
+                        <div class="project-image-wrapper-minimal">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" alt="PLC Gas and Fire Safety System" class="project-img">
+                            <div class="project-hover-overlay">
+                                <span class="project-badge">PLC & Calibration</span>
+                            </div>
                         </div>
-                        <div class="project-info">
+                        <div class="project-info-minimal">
                             <h3>Hệ thống giám sát, báo cháy & dập lửa dùng PLC (VSIP I)</h3>
-                            <p class="project-summary">Sử dụng PLC lập trình tự động hóa quy trình giám sát 24/7, thực hiện hiệu chỉnh thang đo cảm biến và kiểm tra độ trôi sau hiệu chuẩn.</p>
-                            <span class="btn-more" data-i18n="projects.viewMore">Xem chi tiết & Ảnh
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                                </svg>
+                            <p class="project-summary-minimal">Lập trình PLC Mitsubishi FX3U và HMI Delta điều khiển giám sát an toàn. Hiệu chuẩn vòng analog dòng điện đầu vào cảm biến nhiệt độ dùng Fluke 754.</p>
+                            <span class="btn-more-minimal">
+                                <span data-i18n="projects.viewMore">Xem chi tiết</span> &rarr;
                             </span>
                         </div>
                     </div>
 
                     <!-- Project Card 4 -->
-                    <div class="project-card" data-project="project-4">
-                        <div class="project-image-wrapper">
-                            <div class="project-gradient-overlay"></div>
-                            <img src="images/project4.svg" alt="Gas sampling ship system">
-                            <span class="project-badge">Specialized Automation</span>
+                    <div class="project-card-minimal" data-project="project-4">
+                        <div class="project-image-wrapper-minimal">
+                            <img src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=800&auto=format&fit=crop" alt="Gas sampling ship system" class="project-img">
+                            <div class="project-hover-overlay">
+                                <span class="project-badge">Specialized Automation</span>
+                            </div>
                         </div>
-                        <div class="project-info">
+                        <div class="project-info-minimal">
                             <h3>Hệ thống lấy mẫu khí tự động (Tàu vận tải dầu)</h3>
-                            <p class="project-summary">Hệ thống đo đạc lấy mẫu khí tự động cho tàu dầu, lập trình PLC/HMI điều khiển trích mẫu khí và hiệu chuẩn hệ thống sắc ký phân tích.</p>
-                            <span class="btn-more" data-i18n="projects.viewMore">Xem chi tiết & Ảnh
-                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                    <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-                                </svg>
+                            <p class="project-summary-minimal">Hệ thống trích khí nén và đo nồng độ hydrocarbon hầm chứa tàu dầu. Thiết lập bộ lọc khí, lập trình Mitsubishi Q-Series bù trôi sai số áp suất.</p>
+                            <span class="btn-more-minimal">
+                                <span data-i18n="projects.viewMore">Xem chi tiết</span> &rarr;
                             </span>
                         </div>
                     </div>
@@ -396,35 +340,32 @@
                     <p class="section-subtitle" data-i18n="contact.subtitle">Gửi tin nhắn trực tiếp cho tôi. Tôi luôn sẵn lòng trao đổi về các giải pháp tự động hóa và hiệu chuẩn thiết bị.</p>
                 </div>
                 
-                <div class="contact-box card-glass">
+                <div class="contact-box-minimal">
                     <form id="contact-form">
-                        <div class="form-grid">
-                            <div class="form-group">
+                        <div class="form-grid-minimal">
+                            <div class="form-group-minimal">
                                 <label for="name" data-i18n="contact.nameLabel">Họ và tên của bạn *</label>
                                 <input type="text" id="name" required data-i18n="contact.namePlaceholder" placeholder="Ví dụ: Nguyễn Văn A">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group-minimal">
                                 <label for="email" data-i18n="contact.emailLabel">Địa chỉ Email *</label>
                                 <input type="email" id="email" required data-i18n="contact.emailPlaceholder" placeholder="name@company.com">
                             </div>
                         </div>
                         
-                        <div class="form-group">
+                        <div class="form-group-minimal">
                             <label for="subject" data-i18n="contact.subjectLabel">Chủ đề liên hệ</label>
                             <input type="text" id="subject" data-i18n="contact.subjectPlaceholder" placeholder="Ví dụ: Hiệu chuẩn thiết bị / Lập trình PLC / Tư vấn kỹ thuật">
                         </div>
                         
-                        <div class="form-group">
+                        <div class="form-group-minimal">
                             <label for="message" data-i18n="contact.messageLabel">Nội dung tin nhắn *</label>
                             <textarea id="message" required rows="6" data-i18n="contact.messagePlaceholder" placeholder="Nhập lời nhắn hoặc yêu cầu công việc cụ thể của bạn..."></textarea>
                         </div>
                         
                         <div class="text-center">
-                            <button type="submit" class="submit-btn">
+                            <button type="submit" class="btn btn-primary btn-submit">
                                 <span data-i18n="contact.submitBtn">Gửi Tin Nhắn Liên Hệ</span>
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-                                </svg>
                             </button>
                         </div>
                     </form>
@@ -439,19 +380,19 @@
         <div class="container text-center">
             <p class="footer-brand">Nguyễn Đình Trường Giang | <span>Giang.E&A</span></p>
             <p class="footer-tagline" data-i18n="footer.tagline">Chính xác tối đa • An toàn tối ưu • Vận hành bền bỉ</p>
-            <div class="footer-links">
+            <div class="footer-links-minimal">
+                <a href="#hero" data-i18n="nav.home">Trang chủ</a>
                 <a href="#about" data-i18n="nav.about">Giới thiệu</a>
                 <a href="#skills" data-i18n="nav.skills">Kỹ năng</a>
                 <a href="#experience" data-i18n="nav.experience">Kinh nghiệm</a>
-                <a href="#projects" data-i18n="nav.projects">Dự án</a>
             </div>
-            <p class="copyright">&copy; 2026 Nguyễn Đình Trường Giang. <span data-i18n="footer.copyright">Cốt lõi mã nguồn lưu trữ tại</span> <a href="https://github.com/YangKoi/TruongGiang_porfolio" target="_blank">GitHub Repository</a>.</p>
+            <p class="copyright">&copy; 2026 Nguyễn Đình Trường Giang. <span data-i18n="footer.copyright">Mã nguồn lưu trữ tại</span> <a href="https://github.com/YangKoi/TruongGiang_porfolio" target="_blank">GitHub Repository</a>.</p>
         </div>
     </footer>
 
     <!-- POPUP MODAL -->
     <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true">
-        <div class="modal-container card-glass">
+        <div class="modal-container-minimal">
             <button class="modal-close" aria-label="Đóng popup">
                 <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                     <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
